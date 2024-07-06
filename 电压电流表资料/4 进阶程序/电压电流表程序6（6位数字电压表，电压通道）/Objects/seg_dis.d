@@ -1,0 +1,15 @@
+.\objects\seg_dis.o: Hardware\Seg_Dis.c
+.\objects\seg_dis.o: Hardware\Seg_Dis.h
+.\objects\seg_dis.o: .\Driver\cw32f003_gpio.h
+.\objects\seg_dis.o: .\Driver\base_types.h
+.\objects\seg_dis.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\seg_dis.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\string.h
+.\objects\seg_dis.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\seg_dis.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\seg_dis.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\seg_dis.o: .\Driver\cw32f003.h
+.\objects\seg_dis.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h
+.\objects\seg_dis.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h
+.\objects\seg_dis.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h
+.\objects\seg_dis.o: .\Driver\system_cw32f003.h
+.\objects\seg_dis.o: .\Driver\cw32f003_rcc.h

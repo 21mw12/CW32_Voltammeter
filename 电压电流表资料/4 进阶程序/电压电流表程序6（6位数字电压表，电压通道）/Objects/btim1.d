@@ -1,0 +1,16 @@
+.\objects\btim1.o: Hardware\BTIM1.c
+.\objects\btim1.o: Hardware\BTIM1.h
+.\objects\btim1.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\btim1.o: .\Driver\cw32f003.h
+.\objects\btim1.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h
+.\objects\btim1.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h
+.\objects\btim1.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h
+.\objects\btim1.o: .\Driver\system_cw32f003.h
+.\objects\btim1.o: .\Driver\base_types.h
+.\objects\btim1.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\btim1.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\string.h
+.\objects\btim1.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\btim1.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\btim1.o: .\Driver\cw32f003_btim.h
+.\objects\btim1.o: .\Driver\cw32f003_rcc.h
+.\objects\btim1.o: .\User\interrupts_cw32f003.h

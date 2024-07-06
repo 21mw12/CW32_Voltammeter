@@ -1,0 +1,13 @@
+.\objects\adctrans.o: Component\Transition\ADCTrans.c
+.\objects\adctrans.o: Component\Transition\ADCTrans.h
+.\objects\adctrans.o: .\Libraries\inc\base_types.h
+.\objects\adctrans.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\adctrans.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\string.h
+.\objects\adctrans.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\adctrans.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\adctrans.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\adctrans.o: .\Libraries\inc\cw32f003.h
+.\objects\adctrans.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h
+.\objects\adctrans.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h
+.\objects\adctrans.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h
+.\objects\adctrans.o: .\Libraries\inc\system_cw32f003.h

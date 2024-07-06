@@ -1,0 +1,14 @@
+.\objects\system_cw32f003.o: Driver\system_cw32f003.c
+.\objects\system_cw32f003.o: Driver\base_types.h
+.\objects\system_cw32f003.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\system_cw32f003.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\string.h
+.\objects\system_cw32f003.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\system_cw32f003.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system_cw32f003.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\system_cw32f003.o: Driver\cw32f003.h
+.\objects\system_cw32f003.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h
+.\objects\system_cw32f003.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\system_cw32f003.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\system_cw32f003.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\system_cw32f003.o: Driver\system_cw32f003.h
+.\objects\system_cw32f003.o: Driver\cw32f003_rcc.h

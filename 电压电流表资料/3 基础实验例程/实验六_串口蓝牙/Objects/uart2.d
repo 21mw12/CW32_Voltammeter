@@ -1,0 +1,17 @@
+.\objects\uart2.o: Hardware\UART2.c
+.\objects\uart2.o: Hardware\UART2.h
+.\objects\uart2.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart2.o: .\Driver\cw32f003_rcc.h
+.\objects\uart2.o: .\Driver\cw32f003.h
+.\objects\uart2.o: C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h
+.\objects\uart2.o: C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\uart2.o: C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\uart2.o: C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\uart2.o: .\Driver\system_cw32f003.h
+.\objects\uart2.o: .\Driver\base_types.h
+.\objects\uart2.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\uart2.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\uart2.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\uart2.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\uart2.o: .\Driver\cw32f003_gpio.h
+.\objects\uart2.o: .\Driver\cw32f003_uart.h

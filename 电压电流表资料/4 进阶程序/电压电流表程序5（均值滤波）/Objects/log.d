@@ -1,0 +1,17 @@
+.\objects\log.o: User\log.c
+.\objects\log.o: User\log.h
+.\objects\log.o: .\Driver\base_types.h
+.\objects\log.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\log.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\string.h
+.\objects\log.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\log.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\log.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\log.o: .\Driver\cw32f003_gpio.h
+.\objects\log.o: .\Driver\cw32f003.h
+.\objects\log.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h
+.\objects\log.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\log.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\log.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\log.o: .\Driver\system_cw32f003.h
+.\objects\log.o: .\Driver\cw32f003_rcc.h
+.\objects\log.o: .\Driver\cw32f003_uart.h

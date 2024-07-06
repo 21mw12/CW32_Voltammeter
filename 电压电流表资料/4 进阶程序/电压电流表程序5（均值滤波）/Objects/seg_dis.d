@@ -1,0 +1,16 @@
+.\objects\seg_dis.o: Hardware\Seg_Dis.c
+.\objects\seg_dis.o: Hardware\Seg_Dis.h
+.\objects\seg_dis.o: .\Driver\cw32f003_gpio.h
+.\objects\seg_dis.o: .\Driver\base_types.h
+.\objects\seg_dis.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\seg_dis.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\string.h
+.\objects\seg_dis.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\seg_dis.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\seg_dis.o: C:\Keil_v533\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\seg_dis.o: .\Driver\cw32f003.h
+.\objects\seg_dis.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h
+.\objects\seg_dis.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\seg_dis.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\seg_dis.o: C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\seg_dis.o: .\Driver\system_cw32f003.h
+.\objects\seg_dis.o: .\Driver\cw32f003_rcc.h

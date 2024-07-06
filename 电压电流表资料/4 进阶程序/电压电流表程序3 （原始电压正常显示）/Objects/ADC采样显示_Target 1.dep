@@ -1,0 +1,412 @@
+Dependencies for Project 'ADC≤…—˘œ‘ æ', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\Driver\cw32f003_adc.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_adc.o --omf_browse .\objects\cw32f003_adc.crf --depend .\objects\cw32f003_adc.d)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003_adc.h)(0x65F01554)
+I (Driver\cw32f003_gpio.h)(0x65EFB5BD)
+F (.\Driver\cw32f003_atim.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_atim.o --omf_browse .\objects\cw32f003_atim.crf --depend .\objects\cw32f003_atim.d)
+I (Driver\cw32f003_atim.h)(0x62AA9477)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+F (.\Driver\cw32f003_awt.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_awt.o --omf_browse .\objects\cw32f003_awt.crf --depend .\objects\cw32f003_awt.d)
+I (Driver\cw32f003_awt.h)(0x62AA9477)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+F (.\Driver\cw32f003_btim.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_btim.o --omf_browse .\objects\cw32f003_btim.crf --depend .\objects\cw32f003_btim.d)
+I (Driver\cw32f003_btim.h)(0x62AA9477)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+F (.\Driver\cw32f003_crc.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_crc.o --omf_browse .\objects\cw32f003_crc.crf --depend .\objects\cw32f003_crc.d)
+I (Driver\cw32f003_crc.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+F (.\Driver\cw32f003_debug.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_debug.o --omf_browse .\objects\cw32f003_debug.crf --depend .\objects\cw32f003_debug.d)
+I (Driver\cw32f003_debug.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+F (.\Driver\cw32f003_digitalsign.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_digitalsign.o --omf_browse .\objects\cw32f003_digitalsign.crf --depend .\objects\cw32f003_digitalsign.d)
+I (Driver\cw32f003_digitalsign.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+F (.\Driver\cw32f003_flash.c)(0x65EECA2F)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_flash.o --omf_browse .\objects\cw32f003_flash.crf --depend .\objects\cw32f003_flash.d)
+I (Driver\cw32f003_flash.h)(0x65EECA33)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+F (.\Driver\cw32f003_gpio.c)(0x65EFC208)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_gpio.o --omf_browse .\objects\cw32f003_gpio.crf --depend .\objects\cw32f003_gpio.d)
+I (Driver\cw32f003_gpio.h)(0x65EFB5BD)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+F (.\Driver\cw32f003_gtim.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_gtim.o --omf_browse .\objects\cw32f003_gtim.crf --depend .\objects\cw32f003_gtim.d)
+I (Driver\cw32f003_gtim.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+F (.\Driver\cw32f003_i2c.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_i2c.o --omf_browse .\objects\cw32f003_i2c.crf --depend .\objects\cw32f003_i2c.d)
+I (Driver\cw32f003_i2c.h)(0x62AA9477)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003_rcc.h)(0x62AA9477)
+F (.\Driver\cw32f003_iwdt.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_iwdt.o --omf_browse .\objects\cw32f003_iwdt.crf --depend .\objects\cw32f003_iwdt.d)
+I (Driver\cw32f003_iwdt.h)(0x62AA9477)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+F (.\Driver\cw32f003_lvd.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_lvd.o --omf_browse .\objects\cw32f003_lvd.crf --depend .\objects\cw32f003_lvd.d)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003_lvd.h)(0x62AA9477)
+F (.\Driver\cw32f003_pwr.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_pwr.o --omf_browse .\objects\cw32f003_pwr.crf --depend .\objects\cw32f003_pwr.d)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003_pwr.h)(0x62AA9477)
+F (.\Driver\cw32f003_ram.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_ram.o --omf_browse .\objects\cw32f003_ram.crf --depend .\objects\cw32f003_ram.d)
+I (Driver\cw32f003_ram.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+F (.\Driver\cw32f003_rcc.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_rcc.o --omf_browse .\objects\cw32f003_rcc.crf --depend .\objects\cw32f003_rcc.d)
+I (Driver\cw32f003_rcc.h)(0x62AA9477)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+F (.\Driver\cw32f003_spi.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_spi.o --omf_browse .\objects\cw32f003_spi.crf --depend .\objects\cw32f003_spi.d)
+I (Driver\cw32f003_spi.h)(0x62AA9477)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+F (.\Driver\cw32f003_systick.c)(0x65EFE6A8)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_systick.o --omf_browse .\objects\cw32f003_systick.crf --depend .\objects\cw32f003_systick.d)
+I (Driver\cw32f003_systick.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+F (.\Driver\cw32f003_uart.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_uart.o --omf_browse .\objects\cw32f003_uart.crf --depend .\objects\cw32f003_uart.d)
+I (Driver\cw32f003_uart.h)(0x62AA9477)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+F (.\Driver\cw32f003_vc.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_vc.o --omf_browse .\objects\cw32f003_vc.crf --depend .\objects\cw32f003_vc.d)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003_vc.h)(0x62AA9477)
+I (Driver\cw32f003_adc.h)(0x65F01554)
+F (.\Driver\cw32f003_wwdt.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\cw32f003_wwdt.o --omf_browse .\objects\cw32f003_wwdt.crf --depend .\objects\cw32f003_wwdt.d)
+I (Driver\cw32f003_wwdt.h)(0x62AA9477)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+F (.\Driver\system_cw32f003.c)(0x62AA9477)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\system_cw32f003.o --omf_browse .\objects\system_cw32f003.crf --depend .\objects\system_cw32f003.d)
+I (Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (Driver\system_cw32f003.h)(0x62AA9477)
+I (Driver\cw32f003_rcc.h)(0x62AA9477)
+F (.\Driver\startup_cw32f003.s)(0x63B640C0)(--cpu Cortex-M0+ -g --apcs=interwork -I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include--pd "__UVISION_VERSION SETA 538" --pd "_RTE_ SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_cw32f003.lst --xref -o .\objects\startup_cw32f003.o --depend .\objects\startup_cw32f003.d)
+F (.\Hardware\BTIM1.c)(0x65F3C365)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\btim1.o --omf_browse .\objects\btim1.crf --depend .\objects\btim1.d)
+I (Hardware\BTIM1.h)(0x65F3C289)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (.\Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Driver\system_cw32f003.h)(0x62AA9477)
+I (.\Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (.\Driver\cw32f003_btim.h)(0x62AA9477)
+I (.\Driver\cw32f003_rcc.h)(0x62AA9477)
+I (.\User\interrupts_cw32f003.h)(0x62AA9477)
+F (.\Hardware\Seg_Dis.c)(0x65F41DCF)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\seg_dis.o --omf_browse .\objects\seg_dis.crf --depend .\objects\seg_dis.d)
+I (Hardware\Seg_Dis.h)(0x65F3E173)
+I (.\Driver\cw32f003_gpio.h)(0x65EFB5BD)
+I (.\Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (.\Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Driver\system_cw32f003.h)(0x62AA9477)
+I (.\Driver\cw32f003_rcc.h)(0x62AA9477)
+F (.\Hardware\ADC.c)(0x65F7D845)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (Hardware\ADC.h)(0x65F7D6D1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (.\Driver\cw32f003_gpio.h)(0x65EFB5BD)
+I (.\Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (.\Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Driver\system_cw32f003.h)(0x62AA9477)
+I (.\Driver\cw32f003_adc.h)(0x65F01554)
+I (.\Driver\cw32f003_rcc.h)(0x62AA9477)
+F (.\User\interrupts_cw32f003.c)(0x65F3FAC5)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\interrupts_cw32f003.o --omf_browse .\objects\interrupts_cw32f003.crf --depend .\objects\interrupts_cw32f003.d)
+I (User\main.h)(0x65F7D72E)
+I (.\Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Driver\system_cw32f003.h)(0x62AA9477)
+I (.\Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (.\Driver\cw32f003_gpio.h)(0x65EFB5BD)
+I (.\Driver\cw32f003_rcc.h)(0x62AA9477)
+I (.\Driver\cw32f003_systick.h)(0x62AA9477)
+I (.\Driver\cw32f003_flash.h)(0x65EECA33)
+I (.\Driver\cw32f003_btim.h)(0x62AA9477)
+I (.\Hardware\Seg_Dis.h)(0x65F3E173)
+I (.\Hardware\BTIM1.h)(0x65F3C289)
+I (.\User\interrupts_cw32f003.h)(0x62AA9477)
+I (.\Hardware\ADC.h)(0x65F7D6D1)
+I (.\Driver\cw32f003_adc.h)(0x65F01554)
+F (.\User\main.c)(0x65F7D9BB)(--gnu -c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Hardware -I .\User-I.\RTE\_Target_1-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\asdjeqiow\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (User\main.h)(0x65F7D72E)
+I (.\Driver\cw32f003.h)(0x62AA9477)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602577DD)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\asdjeqiow\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Driver\system_cw32f003.h)(0x62AA9477)
+I (.\Driver\base_types.h)(0x62AA9477)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602577D3)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x602577DD)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x602577D7)
+I (.\Driver\cw32f003_gpio.h)(0x65EFB5BD)
+I (.\Driver\cw32f003_rcc.h)(0x62AA9477)
+I (.\Driver\cw32f003_systick.h)(0x62AA9477)
+I (.\Driver\cw32f003_flash.h)(0x65EECA33)
+I (.\Driver\cw32f003_btim.h)(0x62AA9477)
+I (.\Hardware\Seg_Dis.h)(0x65F3E173)
+I (.\Hardware\BTIM1.h)(0x65F3C289)
+I (.\User\interrupts_cw32f003.h)(0x62AA9477)
+I (.\Hardware\ADC.h)(0x65F7D6D1)
+I (.\Driver\cw32f003_adc.h)(0x65F01554)

@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1176224694@qq.com, 1, LIC=585FJ-UW163-30KNC-7SVRQ-WDZA7-3SKR9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  D:\Keil5\software\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      CMSIS_AGDI.dll V1.21.0.0
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+D:\资料\嵌入式\电压电流表 光盘资料240422\数字电压电流表 进阶程序\电压电流表程序7（6位数字电压表，电流通道）\project6.uvprojx
+Project File Date:  07/02/2024
+
+<h2>Output:</h2>
+Build target 'project5'
+*** Scatter Error: no default 'Read/Write' range selected
+compiling cw32f003_adc.c...
+compiling cw32f003_atim.c...
+compiling cw32f003_awt.c...
+compiling cw32f003_btim.c...
+compiling cw32f003_crc.c...
+compiling cw32f003_debug.c...
+compiling cw32f003_digitalsign.c...
+compiling cw32f003_flash.c...
+compiling cw32f003_gpio.c...
+compiling cw32f003_gtim.c...
+compiling cw32f003_i2c.c...
+compiling cw32f003_iwdt.c...
+compiling cw32f003_lvd.c...
+compiling cw32f003_pwr.c...
+compiling cw32f003_ram.c...
+compiling cw32f003_rcc.c...
+compiling cw32f003_spi.c...
+compiling cw32f003_systick.c...
+compiling cw32f003_uart.c...
+compiling cw32f003_vc.c...
+compiling cw32f003_wwdt.c...
+compiling system_cw32f003.c...
+assembling startup_cw32f003.s...
+compiling BTIM1.c...
+compiling Seg_Dis.c...
+Hardware\Seg_Dis.c(52): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WritePin(CW_GPIOC,GPIO_PIN_4,(Dis_Value >> i) & 0x01);    //PC04,A
+Hardware\Seg_Dis.c(55): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WritePin(CW_GPIOB,GPIO_PIN_6,(Dis_Value >> i) & 0x01);    //PB06,B
+Hardware\Seg_Dis.c(58): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WritePin(CW_GPIOB,GPIO_PIN_4,(Dis_Value >> i) & 0x01);    //PB04,C
+Hardware\Seg_Dis.c(61): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WritePin(CW_GPIOB,GPIO_PIN_2,(Dis_Value >> i) & 0x01);    //PB02,D
+Hardware\Seg_Dis.c(64): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WritePin(CW_GPIOA,GPIO_PIN_0,(Dis_Value >> i) & 0x01);    //PA00,E
+Hardware\Seg_Dis.c(67): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WritePin(CW_GPIOB,GPIO_PIN_0,(Dis_Value >> i) & 0x01);    //PB00,F
+Hardware\Seg_Dis.c(70): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WritePin(CW_GPIOA,GPIO_PIN_4,(Dis_Value >> i) & 0x01);    //PA04,G
+Hardware\Seg_Dis.c(73): warning:  #188-D: enumerated type mixed with another type
+                GPIO_WritePin(CW_GPIOB,GPIO_PIN_3,(Dis_Value >> i) & 0x01);    //PB03,DP
+Hardware\Seg_Dis.c(205): warning:  #177-D: variable "Thousands" was declared but never referenced
+        uint8_t Thousands;
+Hardware\Seg_Dis.c(206): warning:  #177-D: variable "Hundreds" was declared but never referenced
+    uint8_t Hundreds;
+Hardware\Seg_Dis.c(207): warning:  #177-D: variable "Tens" was declared but never referenced
+    uint8_t Tens;
+Hardware\Seg_Dis.c(208): warning:  #177-D: variable "Units" was declared but never referenced
+    uint8_t Units; // 个位数
+Hardware\Seg_Dis.c: 12 warnings, 0 errors
+compiling ADC.c...
+compiling interrupts_cw32f003.c...
+User\interrupts_cw32f003.c(249): warning:  #177-D: variable "Cnt" was declared but never referenced
+    static uint32_t Cnt=0;
+User\interrupts_cw32f003.c: 1 warning, 0 errors
+compiling main.c...
+compiling log.c...
+User\log.c(131): warning:  #550-D: variable "TxRxBuffer" was set but never used
+   uint8_t TxRxBuffer;
+User\log.c: 1 warning, 0 errors
+linking...
+Program Size: Code=5760 RO-data=296 RW-data=68 ZI-data=916  
+".\Objects\均值滤波.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\资料\嵌入式\电压电流表 光盘资料240422\数字电压电流表 进阶程序\电压电流表程序7（6位数字电压表，电流通道）\RTE
+  D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  D:\Keil5\software\ARM\PACK\WHXY\CW32F003_DFP\1.0.4
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+</pre>
+</body>
+</html>

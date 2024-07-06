@@ -1,0 +1,15 @@
+.\objects\key.o: Hardware\Key\Key.c
+.\objects\key.o: Hardware\Key\Key.h
+.\objects\key.o: .\Libraries\inc\base_types.h
+.\objects\key.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\key.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\string.h
+.\objects\key.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\key.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\key.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\key.o: .\Libraries\inc\cw32f003.h
+.\objects\key.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h
+.\objects\key.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h
+.\objects\key.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h
+.\objects\key.o: .\Libraries\inc\system_cw32f003.h
+.\objects\key.o: .\Libraries\inc\cw32f003_rcc.h
+.\objects\key.o: .\Libraries\inc\cw32f003_gpio.h

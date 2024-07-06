@@ -1,0 +1,1471 @@
+Component: ARM Compiler 5.05 update 1 (build 106) Tool: armlink [4d0efa]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(i.BTIM1_IRQHandler) refers to cw32f003_btim.o(i.BTIM_GetITStatus) for BTIM_GetITStatus
+    main.o(i.BTIM1_IRQHandler) refers to cw32f003_btim.o(i.BTIM_ClearITPendingBit) for BTIM_ClearITPendingBit
+    main.o(i.BTIM1_IRQHandler) refers to nixie.o(i.Nixie_Show) for Nixie_Show
+    main.o(i.BTIM2_IRQHandler) refers to cw32f003_btim.o(i.BTIM_GetITStatus) for BTIM_GetITStatus
+    main.o(i.BTIM2_IRQHandler) refers to cw32f003_btim.o(i.BTIM_ClearITPendingBit) for BTIM_ClearITPendingBit
+    main.o(i.BTIM2_IRQHandler) refers to keystatemachine.o(i.Key_GetState) for Key_GetState
+    main.o(i.BTIM2_IRQHandler) refers to calibration.o(i.Calibration_SetInfo) for Calibration_SetInfo
+    main.o(i.BTIM2_IRQHandler) refers to calibration.o(i.Calibration_SaveInfo) for Calibration_SaveInfo
+    main.o(i.BTIM2_IRQHandler) refers to keystatemachine.o(.data) for KeyCfg
+    main.o(i.BTIM2_IRQHandler) refers to main.o(.data) for menu
+    main.o(i.BTIM2_IRQHandler) refers to adc.o(.data) for ADCValue
+    main.o(i.RCC_Configuration) refers to cw32f003_flash.o(i.FLASH_SetLatency) for FLASH_SetLatency
+    main.o(i.RCC_Configuration) refers to cw32f003_rcc.o(i.RCC_HSI_Enable) for RCC_HSI_Enable
+    main.o(i.RCC_Configuration) refers to cw32f003_rcc.o(i.RCC_SYSCLKSRC_Config) for RCC_SYSCLKSRC_Config
+    main.o(i.RCC_Configuration) refers to cw32f003_rcc.o(i.RCC_HCLKPRS_Config) for RCC_HCLKPRS_Config
+    main.o(i.RCC_Configuration) refers to cw32f003_rcc.o(i.RCC_PCLKPRS_Config) for RCC_PCLKPRS_Config
+    main.o(i.RCC_Configuration) refers to cw32f003_systick.o(i.InitTick) for InitTick
+    main.o(i.main) refers to main.o(i.RCC_Configuration) for RCC_Configuration
+    main.o(i.main) refers to nixie.o(i.Nixie_Init) for Nixie_Init
+    main.o(i.main) refers to keystatemachine.o(i.Key_Init) for Key_Init
+    main.o(i.main) refers to adc.o(i.ADC_ChannelInit) for ADC_ChannelInit
+    main.o(i.main) refers to btim.o(i.BTIM1_Init) for BTIM1_Init
+    main.o(i.main) refers to calibration.o(i.Calibration_ReadInfo) for Calibration_ReadInfo
+    main.o(i.main) refers to adc.o(i.ADC_GetValue) for ADC_GetValue
+    main.o(i.main) refers to averagefilter.o(i.AverageFilter) for AverageFilter
+    main.o(i.main) refers to calibration.o(i.ADC_ToVoltage) for ADC_ToVoltage
+    main.o(i.main) refers to calibration.o(i.ADC_ToElectricity) for ADC_ToElectricity
+    main.o(i.main) refers to main.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    main.o(i.main) refers to menu.o(i.Menu_SetV1) for Menu_SetV1
+    main.o(i.main) refers to menu.o(i.Menu_SetV2) for Menu_SetV2
+    main.o(i.main) refers to menu.o(i.Menu_SetA1) for Menu_SetA1
+    main.o(i.main) refers to menu.o(i.Menu_SetA2) for Menu_SetA2
+    main.o(i.main) refers to menu.o(i.Menu_VA) for Menu_VA
+    main.o(i.main) refers to menu.o(i.Menu_OnlyV) for Menu_OnlyV
+    main.o(i.main) refers to menu.o(i.Menu_OnlyA) for Menu_OnlyA
+    main.o(i.main) refers to system_cw32f003.o(i.FirmwareDelay) for FirmwareDelay
+    main.o(i.main) refers to adc.o(.data) for ADCValue
+    main.o(i.main) refers to main.o(.data) for Flag_OriginalValue
+    main.o(i.main) refers to main.o(.bss) for V_OriginalValue
+    startup_cw32f003.o(RESET) refers to startup_cw32f003.o(STACK) for __initial_sp
+    startup_cw32f003.o(RESET) refers to startup_cw32f003.o(.text) for Reset_Handler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.NMI_Handler) for NMI_Handler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.HardFault_Handler) for HardFault_Handler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.SVC_Handler) for SVC_Handler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.PendSV_Handler) for PendSV_Handler
+    startup_cw32f003.o(RESET) refers to cw32f003_systick.o(i.SysTick_Handler) for SysTick_Handler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.WDT_IRQHandler) for WDT_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.LVD_IRQHandler) for LVD_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.FLASHRAM_IRQHandler) for FLASHRAM_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.SYSCTRL_IRQHandler) for SYSCTRL_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.GPIOA_IRQHandler) for GPIOA_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.GPIOB_IRQHandler) for GPIOB_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.GPIOC_IRQHandler) for GPIOC_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.ADC_IRQHandler) for ADC_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.VC1_IRQHandler) for VC1_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.VC2_IRQHandler) for VC2_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.GTIM_IRQHandler) for GTIM_IRQHandler
+    startup_cw32f003.o(RESET) refers to main.o(i.BTIM1_IRQHandler) for BTIM1_IRQHandler
+    startup_cw32f003.o(RESET) refers to main.o(i.BTIM2_IRQHandler) for BTIM2_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.BTIM3_IRQHandler) for BTIM3_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.I2C_IRQHandler) for I2C_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.SPI_IRQHandler) for SPI_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.UART1_IRQHandler) for UART1_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.UART2_IRQHandler) for UART2_IRQHandler
+    startup_cw32f003.o(RESET) refers to interrupts_cw32f003.o(i.AWT_IRQHandler) for AWT_IRQHandler
+    startup_cw32f003.o(.text) refers to system_cw32f003.o(i.SystemInit) for SystemInit
+    startup_cw32f003.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    cw32f003_adc.o(i.ADC_DisableIrq) refers to cw32f003_adc.o(i.ADC_DisableNvic) for ADC_DisableNvic
+    cw32f003_adc.o(i.ADC_DisableNvic) refers to cw32f003_adc.o(i.NVIC_ClearPendingIRQ) for NVIC_ClearPendingIRQ
+    cw32f003_adc.o(i.ADC_DisableNvic) refers to cw32f003_adc.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    cw32f003_adc.o(i.ADC_Enable) refers to cw32f003_adc.o(i.ADC_GetITStatus) for ADC_GetITStatus
+    cw32f003_adc.o(i.ADC_EnableIrq) refers to cw32f003_adc.o(i.ADC_EnableNvic) for ADC_EnableNvic
+    cw32f003_adc.o(i.ADC_EnableNvic) refers to cw32f003_adc.o(i.NVIC_ClearPendingIRQ) for NVIC_ClearPendingIRQ
+    cw32f003_adc.o(i.ADC_EnableNvic) refers to cw32f003_adc.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    cw32f003_adc.o(i.ADC_GetTsVref1V5) refers to cw32f003_adc.o(i.ADC_GetConversionValue) for ADC_GetConversionValue
+    cw32f003_adc.o(i.ADC_GetTsVref1V5) refers to fflti.o(.text) for __aeabi_i2f
+    cw32f003_adc.o(i.ADC_GetTsVref1V5) refers to fmul.o(.text) for __aeabi_fmul
+    cw32f003_adc.o(i.ADC_GetTsVref1V5) refers to ffltui.o(.text) for __aeabi_ui2f
+    cw32f003_adc.o(i.ADC_GetTsVref1V5) refers to fadd.o(.text) for __aeabi_fadd
+    cw32f003_adc.o(i.ADC_GetTsVref2V5) refers to cw32f003_adc.o(i.ADC_GetConversionValue) for ADC_GetConversionValue
+    cw32f003_adc.o(i.ADC_GetTsVref2V5) refers to fflti.o(.text) for __aeabi_i2f
+    cw32f003_adc.o(i.ADC_GetTsVref2V5) refers to fmul.o(.text) for __aeabi_fmul
+    cw32f003_adc.o(i.ADC_GetTsVref2V5) refers to ffltui.o(.text) for __aeabi_ui2f
+    cw32f003_adc.o(i.ADC_GetTsVref2V5) refers to fadd.o(.text) for __aeabi_fadd
+    cw32f003_adc.o(i.ADC_SerialChBreakModeCfg) refers to cw32f003_adc.o(i.ADC_SerialChCommon) for ADC_SerialChCommon
+    cw32f003_adc.o(i.ADC_SerialChCommon) refers to cw32f003_adc.o(i.ADC_Init) for ADC_Init
+    cw32f003_adc.o(i.ADC_SerialChCommon) refers to cw32f003_adc.o(i.ADC_Sqr0ChannelCfg) for ADC_Sqr0ChannelCfg
+    cw32f003_adc.o(i.ADC_SerialChCommon) refers to cw32f003_adc.o(i.ADC_Sqr01ChannelCfg) for ADC_Sqr01ChannelCfg
+    cw32f003_adc.o(i.ADC_SerialChCommon) refers to cw32f003_adc.o(i.ADC_Sqr02ChannelCfg) for ADC_Sqr02ChannelCfg
+    cw32f003_adc.o(i.ADC_SerialChCommon) refers to cw32f003_adc.o(i.ADC_Sqr03ChannelCfg) for ADC_Sqr03ChannelCfg
+    cw32f003_adc.o(i.ADC_SerialChContinuousModeCfg) refers to cw32f003_adc.o(i.ADC_SerialChCommon) for ADC_SerialChCommon
+    cw32f003_adc.o(i.ADC_SerialChMoreModeCfg) refers to cw32f003_adc.o(i.ADC_SerialChCommon) for ADC_SerialChCommon
+    cw32f003_adc.o(i.ADC_SerialChScanModeCfg) refers to cw32f003_adc.o(i.ADC_SerialChCommon) for ADC_SerialChCommon
+    cw32f003_adc.o(i.ADC_SingleChCommon) refers to cw32f003_adc.o(i.ADC_Init) for ADC_Init
+    cw32f003_adc.o(i.ADC_SingleChCommon) refers to cw32f003_adc.o(i.ADC_BufEnSingleCh) for ADC_BufEnSingleCh
+    cw32f003_adc.o(i.ADC_SingleChCommon) refers to cw32f003_adc.o(i.ADC_WdtConfig) for ADC_WdtConfig
+    cw32f003_adc.o(i.ADC_SingleChContinuousModeCfg) refers to cw32f003_adc.o(i.ADC_SingleChCommon) for ADC_SingleChCommon
+    cw32f003_adc.o(i.ADC_SingleChMoreModeCfg) refers to cw32f003_adc.o(i.ADC_SingleChCommon) for ADC_SingleChCommon
+    cw32f003_adc.o(i.ADC_SingleChOneModeCfg) refers to cw32f003_adc.o(i.ADC_SingleChCommon) for ADC_SingleChCommon
+    cw32f003_adc.o(i.ADC_Sqr01ChannelCfg) refers to cw32f003_adc.o(i.ADC_BufEnSerialCh) for ADC_BufEnSerialCh
+    cw32f003_adc.o(i.ADC_Sqr02ChannelCfg) refers to cw32f003_adc.o(i.ADC_BufEnSerialCh) for ADC_BufEnSerialCh
+    cw32f003_adc.o(i.ADC_Sqr03ChannelCfg) refers to cw32f003_adc.o(i.ADC_BufEnSerialCh) for ADC_BufEnSerialCh
+    cw32f003_adc.o(i.ADC_Sqr0ChannelCfg) refers to cw32f003_adc.o(i.ADC_BufEnSerialCh) for ADC_BufEnSerialCh
+    cw32f003_flash.o(i.FLASH_SetReadOutLevel) refers to cw32f003_flash.o(i.FLASH_GetReadOutLevel) for FLASH_GetReadOutLevel
+    cw32f003_i2c.o(i.I2C_MasterReadEepomData) refers to cw32f003_i2c.o(i.I2C_GenerateSTART) for I2C_GenerateSTART
+    cw32f003_i2c.o(i.I2C_MasterReadEepomData) refers to cw32f003_i2c.o(i.I2C_GetIrq) for I2C_GetIrq
+    cw32f003_i2c.o(i.I2C_MasterReadEepomData) refers to cw32f003_i2c.o(i.I2C_GetState) for I2C_GetState
+    cw32f003_i2c.o(i.I2C_MasterReadEepomData) refers to main.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    cw32f003_i2c.o(i.I2C_MasterReadEepomData) refers to cw32f003_i2c.o(i.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    cw32f003_i2c.o(i.I2C_MasterReadEepomData) refers to cw32f003_i2c.o(i.I2C_SendData) for I2C_SendData
+    cw32f003_i2c.o(i.I2C_MasterReadEepomData) refers to cw32f003_i2c.o(i.I2C_AcknowledgeConfig) for I2C_AcknowledgeConfig
+    cw32f003_i2c.o(i.I2C_MasterReadEepomData) refers to cw32f003_i2c.o(i.I2C_ReceiveData) for I2C_ReceiveData
+    cw32f003_i2c.o(i.I2C_MasterReadEepomData) refers to cw32f003_i2c.o(i.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    cw32f003_i2c.o(i.I2C_MasterReadEepomData) refers to cw32f003_i2c.o(i.I2C_ClearIrq) for I2C_ClearIrq
+    cw32f003_i2c.o(i.I2C_MasterRecDataFromSlave) refers to cw32f003_i2c.o(i.I2C_GenerateSTART) for I2C_GenerateSTART
+    cw32f003_i2c.o(i.I2C_MasterRecDataFromSlave) refers to cw32f003_i2c.o(i.I2C_GetIrq) for I2C_GetIrq
+    cw32f003_i2c.o(i.I2C_MasterRecDataFromSlave) refers to cw32f003_i2c.o(i.I2C_GetState) for I2C_GetState
+    cw32f003_i2c.o(i.I2C_MasterRecDataFromSlave) refers to cw32f003_i2c.o(i.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    cw32f003_i2c.o(i.I2C_MasterRecDataFromSlave) refers to cw32f003_i2c.o(i.I2C_AcknowledgeConfig) for I2C_AcknowledgeConfig
+    cw32f003_i2c.o(i.I2C_MasterRecDataFromSlave) refers to cw32f003_i2c.o(i.I2C_ReceiveData) for I2C_ReceiveData
+    cw32f003_i2c.o(i.I2C_MasterRecDataFromSlave) refers to cw32f003_i2c.o(i.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    cw32f003_i2c.o(i.I2C_MasterRecDataFromSlave) refers to cw32f003_i2c.o(i.I2C_ClearIrq) for I2C_ClearIrq
+    cw32f003_i2c.o(i.I2C_MasterSendDataToSlave) refers to cw32f003_i2c.o(i.I2C_GenerateSTART) for I2C_GenerateSTART
+    cw32f003_i2c.o(i.I2C_MasterSendDataToSlave) refers to cw32f003_i2c.o(i.I2C_GetIrq) for I2C_GetIrq
+    cw32f003_i2c.o(i.I2C_MasterSendDataToSlave) refers to cw32f003_i2c.o(i.I2C_GetState) for I2C_GetState
+    cw32f003_i2c.o(i.I2C_MasterSendDataToSlave) refers to cw32f003_i2c.o(i.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    cw32f003_i2c.o(i.I2C_MasterSendDataToSlave) refers to cw32f003_i2c.o(i.I2C_SendData) for I2C_SendData
+    cw32f003_i2c.o(i.I2C_MasterSendDataToSlave) refers to cw32f003_i2c.o(i.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    cw32f003_i2c.o(i.I2C_MasterSendDataToSlave) refers to cw32f003_i2c.o(i.I2C_ClearIrq) for I2C_ClearIrq
+    cw32f003_i2c.o(i.I2C_MasterWriteEepromData) refers to cw32f003_i2c.o(i.I2C_GenerateSTART) for I2C_GenerateSTART
+    cw32f003_i2c.o(i.I2C_MasterWriteEepromData) refers to cw32f003_i2c.o(i.I2C_GetIrq) for I2C_GetIrq
+    cw32f003_i2c.o(i.I2C_MasterWriteEepromData) refers to cw32f003_i2c.o(i.I2C_GetState) for I2C_GetState
+    cw32f003_i2c.o(i.I2C_MasterWriteEepromData) refers to cw32f003_i2c.o(i.I2C_Send7bitAddress) for I2C_Send7bitAddress
+    cw32f003_i2c.o(i.I2C_MasterWriteEepromData) refers to cw32f003_i2c.o(i.I2C_SendData) for I2C_SendData
+    cw32f003_i2c.o(i.I2C_MasterWriteEepromData) refers to cw32f003_i2c.o(i.I2C_GenerateSTOP) for I2C_GenerateSTOP
+    cw32f003_i2c.o(i.I2C_MasterWriteEepromData) refers to cw32f003_i2c.o(i.I2C_ClearIrq) for I2C_ClearIrq
+    cw32f003_i2c.o(i.I2C_Master_Init) refers to cw32f003_i2c.o(i.I2C_SetBaud) for I2C_SetBaud
+    cw32f003_i2c.o(i.I2C_Master_Init) refers to cw32f003_i2c.o(i.I2C_BaudGeneratorEnable) for I2C_BaudGeneratorEnable
+    cw32f003_i2c.o(i.I2C_Master_Init) refers to cw32f003_i2c.o(i.I2C_FilterConfig) for I2C_FilterConfig
+    cw32f003_i2c.o(i.I2C_Master_Init) refers to cw32f003_i2c.o(i.I2C_AcknowledgeConfig) for I2C_AcknowledgeConfig
+    cw32f003_i2c.o(i.I2C_SlaveRecDataFromMaster) refers to cw32f003_i2c.o(i.I2C_GetIrq) for I2C_GetIrq
+    cw32f003_i2c.o(i.I2C_SlaveRecDataFromMaster) refers to cw32f003_i2c.o(i.I2C_GetState) for I2C_GetState
+    cw32f003_i2c.o(i.I2C_SlaveRecDataFromMaster) refers to main.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    cw32f003_i2c.o(i.I2C_SlaveRecDataFromMaster) refers to cw32f003_i2c.o(i.I2C_ReceiveData) for I2C_ReceiveData
+    cw32f003_i2c.o(i.I2C_SlaveRecDataFromMaster) refers to cw32f003_i2c.o(i.I2C_ClearIrq) for I2C_ClearIrq
+    cw32f003_i2c.o(i.I2C_SlaveSendDataToMaster) refers to cw32f003_i2c.o(i.I2C_GetIrq) for I2C_GetIrq
+    cw32f003_i2c.o(i.I2C_SlaveSendDataToMaster) refers to cw32f003_i2c.o(i.I2C_GetState) for I2C_GetState
+    cw32f003_i2c.o(i.I2C_SlaveSendDataToMaster) refers to cw32f003_i2c.o(i.I2C_SendData) for I2C_SendData
+    cw32f003_i2c.o(i.I2C_SlaveSendDataToMaster) refers to cw32f003_i2c.o(i.I2C_ClearIrq) for I2C_ClearIrq
+    cw32f003_i2c.o(i.I2C_Slave_Init) refers to cw32f003_i2c.o(i.I2C_FilterConfig) for I2C_FilterConfig
+    cw32f003_i2c.o(i.I2C_Slave_Init) refers to cw32f003_i2c.o(i.I2C_AcknowledgeConfig) for I2C_AcknowledgeConfig
+    cw32f003_i2c.o(i.I2C_Slave_Init) refers to cw32f003_i2c.o(i.I2C_SetOwnSlaveAddress0) for I2C_SetOwnSlaveAddress0
+    cw32f003_i2c.o(i.I2C_Slave_Init) refers to cw32f003_i2c.o(i.I2C_GcConfig) for I2C_GcConfig
+    cw32f003_i2c.o(i.I2C_Slave_Init) refers to cw32f003_i2c.o(i.I2C_SetOwnSlaveAddress1) for I2C_SetOwnSlaveAddress1
+    cw32f003_i2c.o(i.I2C_Slave_Init) refers to cw32f003_i2c.o(i.I2C_SetOwnSlaveAddress2) for I2C_SetOwnSlaveAddress2
+    cw32f003_lvd.o(i.LVD_DeInit) refers to cw32f003_lvd.o(i.LVD_DisableIrq) for LVD_DisableIrq
+    cw32f003_lvd.o(i.LVD_DeInit) refers to cw32f003_lvd.o(i.LVD_Disable) for LVD_Disable
+    cw32f003_lvd.o(i.LVD_DisableIrq) refers to cw32f003_lvd.o(i.LVD_DisableNvic) for LVD_DisableNvic
+    cw32f003_lvd.o(i.LVD_DisableNvic) refers to cw32f003_lvd.o(i.NVIC_ClearPendingIRQ) for NVIC_ClearPendingIRQ
+    cw32f003_lvd.o(i.LVD_EnableIrq) refers to cw32f003_lvd.o(i.LVD_EnableNvic) for LVD_EnableNvic
+    cw32f003_lvd.o(i.LVD_EnableNvic) refers to cw32f003_lvd.o(i.NVIC_ClearPendingIRQ) for NVIC_ClearPendingIRQ
+    cw32f003_lvd.o(i.LVD_EnableNvic) refers to cw32f003_lvd.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    cw32f003_lvd.o(i.LVD_Init) refers to cw32f003_lvd.o(i.LVD_Disable) for LVD_Disable
+    cw32f003_lvd.o(i.LVD_Init) refers to cw32f003_lvd.o(i.LVD_DisableIrq) for LVD_DisableIrq
+    cw32f003_rcc.o(i.RCC_SYSCLKSRC_Config) refers to cw32f003_rcc.o(i.RCC_Sysctrl_GetHClkFreq) for RCC_Sysctrl_GetHClkFreq
+    cw32f003_rcc.o(i.RCC_SYSCLKSRC_Config) refers to cw32f003_rcc.o(i.RCC_SystemCoreClockUpdate) for RCC_SystemCoreClockUpdate
+    cw32f003_rcc.o(i.RCC_SysClk_Switch) refers to cw32f003_rcc.o(i.RCC_Sysctrl_GetHClkFreq) for RCC_Sysctrl_GetHClkFreq
+    cw32f003_rcc.o(i.RCC_SysClk_Switch) refers to cw32f003_rcc.o(i.RCC_SystemCoreClockUpdate) for RCC_SystemCoreClockUpdate
+    cw32f003_rcc.o(i.RCC_Sysctrl_GetHClkFreq) refers to uidiv.o(.text) for __aeabi_uidivmod
+    cw32f003_rcc.o(i.RCC_Sysctrl_GetHClkFreq) refers to cw32f003_rcc.o(.constdata) for hsiprs_tbl
+    cw32f003_rcc.o(i.RCC_Sysctrl_GetPClkFreq) refers to cw32f003_rcc.o(i.RCC_Sysctrl_GetHClkFreq) for RCC_Sysctrl_GetHClkFreq
+    cw32f003_rcc.o(i.RCC_SystemCoreClockUpdate) refers to system_cw32f003.o(.data) for SystemCoreClock
+    cw32f003_systick.o(i.GetTick) refers to cw32f003_systick.o(.data) for uwTick
+    cw32f003_systick.o(i.InitTick) refers to uidiv.o(.text) for __aeabi_uidivmod
+    cw32f003_systick.o(i.InitTick) refers to cw32f003_systick.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    cw32f003_systick.o(i.InitTick) refers to cw32f003_systick.o(.data) for uwTickFreq
+    cw32f003_systick.o(i.SysTickDelay) refers to cw32f003_systick.o(i.GetTick) for GetTick
+    cw32f003_systick.o(i.SysTickDelay) refers to cw32f003_systick.o(.data) for uwTickFreq
+    cw32f003_systick.o(i.SysTick_Handler) refers to cw32f003_systick.o(.data) for uwTick
+    cw32f003_uart.o(i.USART_Init) refers to ffltui.o(.text) for __aeabi_ui2f
+    cw32f003_uart.o(i.USART_Init) refers to fdiv.o(.text) for __aeabi_fdiv
+    cw32f003_uart.o(i.USART_Init) refers to ffixui.o(.text) for __aeabi_f2uiz
+    cw32f003_uart.o(i.USART_Init) refers to fadd.o(.text) for __aeabi_frsub
+    cw32f003_uart.o(i.USART_Init) refers to fmul.o(.text) for __aeabi_fmul
+    cw32f003_uart.o(i.USART_Init) refers to f2d.o(.text) for __aeabi_f2d
+    cw32f003_uart.o(i.USART_Init) refers to dadd.o(.text) for __aeabi_dadd
+    cw32f003_uart.o(i.USART_Init) refers to dfixui.o(.text) for __aeabi_d2uiz
+    cw32f003_vc.o(i.VC1VC2_INNInit) refers to cw32f003_adc.o(i.ADC_Enable) for ADC_Enable
+    cw32f003_vc.o(i.VC1_ChannelDeInit) refers to cw32f003_vc.o(i.VC_DisableNvic) for VC_DisableNvic
+    cw32f003_vc.o(i.VC1_ChannelInit) refers to cw32f003_vc.o(i.VC1VC2_INNInit) for VC1VC2_INNInit
+    cw32f003_vc.o(i.VC1_DisableIrq) refers to cw32f003_vc.o(i.VC_DisableNvic) for VC_DisableNvic
+    cw32f003_vc.o(i.VC1_EnableChannel) refers to cw32f003_vc.o(i.VC1_GetFlagStatus) for VC1_GetFlagStatus
+    cw32f003_vc.o(i.VC1_EnableIrq) refers to cw32f003_vc.o(i.VC_EnableNvic) for VC_EnableNvic
+    cw32f003_vc.o(i.VC2_ChannelDeInit) refers to cw32f003_vc.o(i.VC_DisableNvic) for VC_DisableNvic
+    cw32f003_vc.o(i.VC2_ChannelInit) refers to cw32f003_vc.o(i.VC1VC2_INNInit) for VC1VC2_INNInit
+    cw32f003_vc.o(i.VC2_DisableIrq) refers to cw32f003_vc.o(i.VC_DisableNvic) for VC_DisableNvic
+    cw32f003_vc.o(i.VC2_EnableChannel) refers to cw32f003_vc.o(i.VC2_GetFlagStatus) for VC2_GetFlagStatus
+    cw32f003_vc.o(i.VC2_EnableIrq) refers to cw32f003_vc.o(i.VC_EnableNvic) for VC_EnableNvic
+    cw32f003_vc.o(i.VC_DeInit) refers to cw32f003_vc.o(i.VC1_ChannelDeInit) for VC1_ChannelDeInit
+    cw32f003_vc.o(i.VC_DeInit) refers to cw32f003_vc.o(i.VC2_ChannelDeInit) for VC2_ChannelDeInit
+    cw32f003_vc.o(i.VC_DisableNvic) refers to cw32f003_vc.o(i.NVIC_ClearPendingIRQ) for NVIC_ClearPendingIRQ
+    cw32f003_vc.o(i.VC_EnableNvic) refers to cw32f003_vc.o(i.NVIC_ClearPendingIRQ) for NVIC_ClearPendingIRQ
+    cw32f003_vc.o(i.VC_EnableNvic) refers to cw32f003_vc.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    system_cw32f003.o(i.SystemCoreClockUpdate) refers to system_cw32f003.o(.data) for SystemCoreClock
+    system_cw32f003.o(i.SystemInit) refers to system_cw32f003.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    nixie.o(i.Nixie_ClearNumInfo) refers to nixie.o(.data) for NixieShowNumInfo
+    nixie.o(i.Nixie_CloseLocation) refers to cw32f003_gpio.o(i.GPIO_WritePin) for GPIO_WritePin
+    nixie.o(i.Nixie_Init) refers to cw32f003_gpio.o(i.GPIO_Init) for GPIO_Init
+    nixie.o(i.Nixie_NumClear) refers to cw32f003_gpio.o(i.GPIO_WritePin) for GPIO_WritePin
+    nixie.o(i.Nixie_SetDot) refers to cw32f003_gpio.o(i.GPIO_WritePin) for GPIO_WritePin
+    nixie.o(i.Nixie_SetLocation) refers to nixie.o(i.Nixie_CloseLocation) for Nixie_CloseLocation
+    nixie.o(i.Nixie_SetLocation) refers to main.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    nixie.o(i.Nixie_SetLocation) refers to cw32f003_gpio.o(i.GPIO_WritePin) for GPIO_WritePin
+    nixie.o(i.Nixie_SetNum) refers to main.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    nixie.o(i.Nixie_SetNum) refers to cw32f003_gpio.o(i.GPIO_WritePin) for GPIO_WritePin
+    nixie.o(i.Nixie_SetNum) refers to nixie.o(.data) for NixieData
+    nixie.o(i.Nixie_Show) refers to nixie.o(i.Nixie_SetLocation) for Nixie_SetLocation
+    nixie.o(i.Nixie_Show) refers to nixie.o(i.Nixie_SetNum) for Nixie_SetNum
+    nixie.o(i.Nixie_Show) refers to nixie.o(.data) for index
+    keystatemachine.o(i.KEY_GetAction) refers to cw32f003_gpio.o(i.GPIO_ReadPin) for GPIO_ReadPin
+    keystatemachine.o(i.KEY_GetAction) refers to keystatemachine.o(.data) for KeyCfg
+    keystatemachine.o(i.Key_GetState) refers to keystatemachine.o(i.KEY_GetAction) for KEY_GetAction
+    keystatemachine.o(i.Key_GetState) refers to main.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    keystatemachine.o(i.Key_GetState) refers to keystatemachine.o(.data) for KeyCfg
+    keystatemachine.o(i.Key_Init) refers to cw32f003_gpio.o(i.GPIO_Init) for GPIO_Init
+    keystatemachine.o(i.Key_Init) refers to btim.o(i.BTIM2_Init) for BTIM2_Init
+    averagefilter.o(i.AverageFilter) refers to uidiv.o(.text) for __aeabi_uidivmod
+    calibration.o(i.ADC_ToVoltage) refers to ffltui.o(.text) for __aeabi_ui2f
+    calibration.o(i.ADC_ToVoltage) refers to fmul.o(.text) for __aeabi_fmul
+    calibration.o(i.ADC_ToVoltage) refers to ffixui.o(.text) for __aeabi_f2uiz
+    calibration.o(i.ADC_ToVoltage) refers to calibration.o(.data) for V_K
+    calibration.o(i.Calibration_ReadInfo) refers to flash.o(i.FLASH_Read) for FLASH_Read
+    calibration.o(i.Calibration_ReadInfo) refers to calibration.o(i.ComputeK) for ComputeK
+    calibration.o(i.Calibration_ReadInfo) refers to calibration.o(.bss) for VA_Standard
+    calibration.o(i.Calibration_SaveInfo) refers to flash.o(i.FLASH_Write) for FLASH_Write
+    calibration.o(i.Calibration_SaveInfo) refers to calibration.o(.bss) for VA_Standard
+    calibration.o(i.Calibration_SetInfo) refers to calibration.o(.bss) for VA_Standard
+    calibration.o(i.ComputeK) refers to dflti.o(.text) for __aeabi_i2d
+    calibration.o(i.ComputeK) refers to ddiv.o(.text) for __aeabi_ddiv
+    calibration.o(i.ComputeK) refers to dmul.o(.text) for __aeabi_dmul
+    calibration.o(i.ComputeK) refers to d2f.o(.text) for __aeabi_d2f
+    calibration.o(i.ComputeK) refers to calibration.o(.bss) for VA_Standard
+    calibration.o(i.ComputeK) refers to calibration.o(.data) for V_K
+    menu.o(i.Menu_OnlyA) refers to idiv.o(.text) for __aeabi_idivmod
+    menu.o(i.Menu_OnlyA) refers to nixie.o(.data) for NixieShowNumInfo
+    menu.o(i.Menu_OnlyV) refers to idiv.o(.text) for __aeabi_idivmod
+    menu.o(i.Menu_OnlyV) refers to nixie.o(.data) for NixieShowNumInfo
+    menu.o(i.Menu_SetA1) refers to idiv.o(.text) for __aeabi_idivmod
+    menu.o(i.Menu_SetA1) refers to nixie.o(.data) for NixieShowNumInfo
+    menu.o(i.Menu_SetA2) refers to idiv.o(.text) for __aeabi_idivmod
+    menu.o(i.Menu_SetA2) refers to nixie.o(.data) for NixieShowNumInfo
+    menu.o(i.Menu_SetV1) refers to idiv.o(.text) for __aeabi_idivmod
+    menu.o(i.Menu_SetV1) refers to nixie.o(.data) for NixieShowNumInfo
+    menu.o(i.Menu_SetV2) refers to idiv.o(.text) for __aeabi_idivmod
+    menu.o(i.Menu_SetV2) refers to nixie.o(.data) for NixieShowNumInfo
+    menu.o(i.Menu_VA) refers to idiv.o(.text) for __aeabi_idivmod
+    menu.o(i.Menu_VA) refers to nixie.o(.data) for NixieShowNumInfo
+    flash.o(i.FLASH_Erase) refers to cw32f003_flash.o(i.FLASH_UnlockPages) for FLASH_UnlockPages
+    flash.o(i.FLASH_Erase) refers to cw32f003_flash.o(i.FLASH_ErasePages) for FLASH_ErasePages
+    flash.o(i.FLASH_Erase) refers to cw32f003_flash.o(i.FLASH_LockAllPages) for FLASH_LockAllPages
+    flash.o(i.FLASH_Write) refers to flash.o(i.FLASH_Erase) for FLASH_Erase
+    flash.o(i.FLASH_Write) refers to cw32f003_flash.o(i.FLASH_UnlockPages) for FLASH_UnlockPages
+    flash.o(i.FLASH_Write) refers to cw32f003_flash.o(i.FLASH_WirteHalfWords) for FLASH_WirteHalfWords
+    flash.o(i.FLASH_Write) refers to cw32f003_flash.o(i.FLASH_LockAllPages) for FLASH_LockAllPages
+    adc.o(i.ADC_ChannelInit) refers to cw32f003_gpio.o(i.GPIO_Init) for GPIO_Init
+    adc.o(i.ADC_ChannelInit) refers to cw32f003_adc.o(i.ADC_StructInit) for ADC_StructInit
+    adc.o(i.ADC_ChannelInit) refers to memcpya.o(.text) for __aeabi_memcpy4
+    adc.o(i.ADC_ChannelInit) refers to cw32f003_adc.o(i.ADC_SerialChContinuousModeCfg) for ADC_SerialChContinuousModeCfg
+    adc.o(i.ADC_ChannelInit) refers to cw32f003_adc.o(i.ADC_ClearITPendingAll) for ADC_ClearITPendingAll
+    adc.o(i.ADC_ChannelInit) refers to cw32f003_adc.o(i.ADC_Enable) for ADC_Enable
+    adc.o(i.ADC_ChannelInit) refers to cw32f003_adc.o(i.ADC_SoftwareStartConvCmd) for ADC_SoftwareStartConvCmd
+    adc.o(i.ADC_GetValue) refers to cw32f003_adc.o(i.ADC_GetSqr0Result) for ADC_GetSqr0Result
+    adc.o(i.ADC_GetValue) refers to cw32f003_adc.o(i.ADC_GetSqr1Result) for ADC_GetSqr1Result
+    adc.o(i.ADC_GetValue) refers to adc.o(.data) for ADCValue
+    btim.o(i.BTIM1_Init) refers to btim.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    btim.o(i.BTIM1_Init) refers to cw32f003_btim.o(i.BTIM_TimeBaseInit) for BTIM_TimeBaseInit
+    btim.o(i.BTIM1_Init) refers to cw32f003_btim.o(i.BTIM_ITConfig) for BTIM_ITConfig
+    btim.o(i.BTIM1_Init) refers to cw32f003_btim.o(i.BTIM_Cmd) for BTIM_Cmd
+    btim.o(i.BTIM2_Init) refers to btim.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    btim.o(i.BTIM2_Init) refers to cw32f003_btim.o(i.BTIM_TimeBaseInit) for BTIM_TimeBaseInit
+    btim.o(i.BTIM2_Init) refers to cw32f003_btim.o(i.BTIM_ITConfig) for BTIM_ITConfig
+    btim.o(i.BTIM2_Init) refers to cw32f003_btim.o(i.BTIM_Cmd) for BTIM_Cmd
+    uart.o(i.UART_Init) refers to cw32f003_rcc.o(i.RCC_AHBPeriphClk_Enable) for RCC_AHBPeriphClk_Enable
+    uart.o(i.UART_Init) refers to cw32f003_rcc.o(i.RCC_APBPeriphClk_Enable1) for RCC_APBPeriphClk_Enable1
+    uart.o(i.UART_Init) refers to cw32f003_gpio.o(i.GPIO_Init) for GPIO_Init
+    uart.o(i.UART_Init) refers to cw32f003_rcc.o(i.RCC_Sysctrl_GetPClkFreq) for RCC_Sysctrl_GetPClkFreq
+    uart.o(i.UART_Init) refers to cw32f003_uart.o(i.USART_Init) for USART_Init
+    uart.o(i.UART_SendString) refers to cw32f003_uart.o(i.USART_SendData_8bit) for USART_SendData_8bit
+    uart.o(i.UART_SendString) refers to cw32f003_uart.o(i.USART_GetFlagStatus) for USART_GetFlagStatus
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    idiv.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    fadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fadd.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    fmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers to fepilogue.o(.text) for _float_round
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    fflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fflti.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    ffltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffltui.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    dflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dflti.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ffixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixui.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers to fepilogue.o(.text) for _float_round
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_cw32f003.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_cw32f003.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    depilogue.o(.text) refers to depilogue.o(i.__ARM_clz) for __ARM_clz
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing startup_cw32f003.o(HEAP), (512 bytes).
+    Removing interrupts_cw32f003.o(.rev16_text), (4 bytes).
+    Removing interrupts_cw32f003.o(.revsh_text), (4 bytes).
+    Removing cw32f003_adc.o(.rev16_text), (4 bytes).
+    Removing cw32f003_adc.o(.revsh_text), (4 bytes).
+    Removing cw32f003_adc.o(i.ADC_AutoStop), (20 bytes).
+    Removing cw32f003_adc.o(i.ADC_BufEnSingleCh), (68 bytes).
+    Removing cw32f003_adc.o(i.ADC_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_adc.o(i.ADC_ClrAccResult), (20 bytes).
+    Removing cw32f003_adc.o(i.ADC_DeInit), (32 bytes).
+    Removing cw32f003_adc.o(i.ADC_Disable), (20 bytes).
+    Removing cw32f003_adc.o(i.ADC_DisableIrq), (24 bytes).
+    Removing cw32f003_adc.o(i.ADC_DisableNvic), (32 bytes).
+    Removing cw32f003_adc.o(i.ADC_EnableIrq), (12 bytes).
+    Removing cw32f003_adc.o(i.ADC_EnableNvic), (40 bytes).
+    Removing cw32f003_adc.o(i.ADC_ExtTrigCfg), (40 bytes).
+    Removing cw32f003_adc.o(i.ADC_GetAccResult), (20 bytes).
+    Removing cw32f003_adc.o(i.ADC_GetConversionValue), (12 bytes).
+    Removing cw32f003_adc.o(i.ADC_GetITStatusAll), (12 bytes).
+    Removing cw32f003_adc.o(i.ADC_GetSqr2Result), (20 bytes).
+    Removing cw32f003_adc.o(i.ADC_GetSqr3Result), (20 bytes).
+    Removing cw32f003_adc.o(i.ADC_GetTsVref1V5), (68 bytes).
+    Removing cw32f003_adc.o(i.ADC_GetTsVref2V5), (68 bytes).
+    Removing cw32f003_adc.o(i.ADC_ITConfig), (40 bytes).
+    Removing cw32f003_adc.o(i.ADC_SerialChBreakModeCfg), (32 bytes).
+    Removing cw32f003_adc.o(i.ADC_SerialChMoreModeCfg), (56 bytes).
+    Removing cw32f003_adc.o(i.ADC_SerialChScanModeCfg), (32 bytes).
+    Removing cw32f003_adc.o(i.ADC_SetAlign), (20 bytes).
+    Removing cw32f003_adc.o(i.ADC_SetDiscard), (20 bytes).
+    Removing cw32f003_adc.o(i.ADC_SetTs), (20 bytes).
+    Removing cw32f003_adc.o(i.ADC_SetVref), (60 bytes).
+    Removing cw32f003_adc.o(i.ADC_SingleChCommon), (64 bytes).
+    Removing cw32f003_adc.o(i.ADC_SingleChContinuousModeCfg), (32 bytes).
+    Removing cw32f003_adc.o(i.ADC_SingleChMoreModeCfg), (56 bytes).
+    Removing cw32f003_adc.o(i.ADC_SingleChOneModeCfg), (28 bytes).
+    Removing cw32f003_adc.o(i.ADC_WdtConfig), (84 bytes).
+    Removing cw32f003_adc.o(i.ADC_WdtInit), (28 bytes).
+    Removing cw32f003_adc.o(i.NVIC_ClearPendingIRQ), (20 bytes).
+    Removing cw32f003_adc.o(i.NVIC_SetPriority), (120 bytes).
+    Removing cw32f003_atim.o(.rev16_text), (4 bytes).
+    Removing cw32f003_atim.o(.revsh_text), (4 bytes).
+    Removing cw32f003_atim.o(i.ATIM_ADCTriggerConfig), (36 bytes).
+    Removing cw32f003_atim.o(i.ATIM_BrakeConfig), (28 bytes).
+    Removing cw32f003_atim.o(i.ATIM_CH1Config), (32 bytes).
+    Removing cw32f003_atim.o(i.ATIM_CH2Config), (32 bytes).
+    Removing cw32f003_atim.o(i.ATIM_CH3Config), (32 bytes).
+    Removing cw32f003_atim.o(i.ATIM_CH4Config), (32 bytes).
+    Removing cw32f003_atim.o(i.ATIM_ClearITPendingBit), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_Cmd), (24 bytes).
+    Removing cw32f003_atim.o(i.ATIM_CtrlPWMOutputs), (32 bytes).
+    Removing cw32f003_atim.o(i.ATIM_DeInit), (32 bytes).
+    Removing cw32f003_atim.o(i.ATIM_ETRConfig), (24 bytes).
+    Removing cw32f003_atim.o(i.ATIM_ETRSelect), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_GetCapture1A), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_GetCapture1B), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_GetCapture2A), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_GetCapture2B), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_GetCapture3A), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_GetCapture3B), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_GetITStatus), (24 bytes).
+    Removing cw32f003_atim.o(i.ATIM_IC1AInit), (48 bytes).
+    Removing cw32f003_atim.o(i.ATIM_IC1BInit), (52 bytes).
+    Removing cw32f003_atim.o(i.ATIM_IC2AInit), (52 bytes).
+    Removing cw32f003_atim.o(i.ATIM_IC2BInit), (56 bytes).
+    Removing cw32f003_atim.o(i.ATIM_IC3AInit), (52 bytes).
+    Removing cw32f003_atim.o(i.ATIM_IC3BInit), (56 bytes).
+    Removing cw32f003_atim.o(i.ATIM_ITConfig), (32 bytes).
+    Removing cw32f003_atim.o(i.ATIM_ITRSelect), (24 bytes).
+    Removing cw32f003_atim.o(i.ATIM_Init), (104 bytes).
+    Removing cw32f003_atim.o(i.ATIM_MasterModeConfig), (24 bytes).
+    Removing cw32f003_atim.o(i.ATIM_OC1AInit), (100 bytes).
+    Removing cw32f003_atim.o(i.ATIM_OC1BInit), (80 bytes).
+    Removing cw32f003_atim.o(i.ATIM_OC2AInit), (104 bytes).
+    Removing cw32f003_atim.o(i.ATIM_OC2BInit), (84 bytes).
+    Removing cw32f003_atim.o(i.ATIM_OC3AInit), (104 bytes).
+    Removing cw32f003_atim.o(i.ATIM_OC3BInit), (84 bytes).
+    Removing cw32f003_atim.o(i.ATIM_OC4Init), (52 bytes).
+    Removing cw32f003_atim.o(i.ATIM_PWMOutputConfig), (76 bytes).
+    Removing cw32f003_atim.o(i.ATIM_SetCompare1A), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_SetCompare1B), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_SetCompare2A), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_SetCompare2B), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_SetCompare3A), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_SetCompare3B), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_SetCompare4), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_SetReloadValue), (12 bytes).
+    Removing cw32f003_atim.o(i.ATIM_SlaverModeConfig), (32 bytes).
+    Removing cw32f003_atim.o(i.ATIM_TriggerSelect), (28 bytes).
+    Removing cw32f003_atim.o(i.ATIM_UpdateEventSelect), (32 bytes).
+    Removing cw32f003_awt.o(.rev16_text), (4 bytes).
+    Removing cw32f003_awt.o(.revsh_text), (4 bytes).
+    Removing cw32f003_awt.o(i.AWT_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_awt.o(i.AWT_ClkSourceConfig), (24 bytes).
+    Removing cw32f003_awt.o(i.AWT_Cmd), (36 bytes).
+    Removing cw32f003_awt.o(i.AWT_DeInit), (28 bytes).
+    Removing cw32f003_awt.o(i.AWT_GetAutoreload), (12 bytes).
+    Removing cw32f003_awt.o(i.AWT_GetClkSource), (16 bytes).
+    Removing cw32f003_awt.o(i.AWT_GetCounter), (12 bytes).
+    Removing cw32f003_awt.o(i.AWT_GetITStatus), (24 bytes).
+    Removing cw32f003_awt.o(i.AWT_GetPrescaler), (16 bytes).
+    Removing cw32f003_awt.o(i.AWT_ITConfig), (32 bytes).
+    Removing cw32f003_awt.o(i.AWT_PrescalerConfig), (20 bytes).
+    Removing cw32f003_awt.o(i.AWT_TimeCntInit), (40 bytes).
+    Removing cw32f003_awt.o(i.AWT_TimeCntStructInit), (24 bytes).
+    Removing cw32f003_btim.o(.rev16_text), (4 bytes).
+    Removing cw32f003_btim.o(.revsh_text), (4 bytes).
+    Removing cw32f003_btim.o(i.BTIM_DeInit), (24 bytes).
+    Removing cw32f003_btim.o(i.BTIM_ETRConfig), (24 bytes).
+    Removing cw32f003_btim.o(i.BTIM_GetAutoreload), (8 bytes).
+    Removing cw32f003_btim.o(i.BTIM_GetCounter), (8 bytes).
+    Removing cw32f003_btim.o(i.BTIM_GetPrescaler), (10 bytes).
+    Removing cw32f003_btim.o(i.BTIM_ModeConfig), (12 bytes).
+    Removing cw32f003_btim.o(i.BTIM_OutputToggleCmd), (24 bytes).
+    Removing cw32f003_btim.o(i.BTIM_PrescalerConfig), (34 bytes).
+    Removing cw32f003_btim.o(i.BTIM_SelectETRInputPolarity), (12 bytes).
+    Removing cw32f003_btim.o(i.BTIM_SelectInputTrigger), (12 bytes).
+    Removing cw32f003_btim.o(i.BTIM_SelectOnePulseMode), (12 bytes).
+    Removing cw32f003_btim.o(i.BTIM_SetAutoreload), (4 bytes).
+    Removing cw32f003_btim.o(i.BTIM_SetCounter), (4 bytes).
+    Removing cw32f003_btim.o(i.BTIM_TimeBaseStructInit), (12 bytes).
+    Removing cw32f003_crc.o(.rev16_text), (4 bytes).
+    Removing cw32f003_crc.o(.revsh_text), (4 bytes).
+    Removing cw32f003_crc.o(i.CRC16_Calc_8bit), (40 bytes).
+    Removing cw32f003_debug.o(.rev16_text), (4 bytes).
+    Removing cw32f003_debug.o(.revsh_text), (4 bytes).
+    Removing cw32f003_debug.o(i.DBGMCU_Config), (32 bytes).
+    Removing cw32f003_digitalsign.o(.rev16_text), (4 bytes).
+    Removing cw32f003_digitalsign.o(.revsh_text), (4 bytes).
+    Removing cw32f003_digitalsign.o(i.DIGITALSIGN_GetChipType), (28 bytes).
+    Removing cw32f003_digitalsign.o(i.DIGITALSIGN_GetChipUid), (88 bytes).
+    Removing cw32f003_digitalsign.o(i.DIGITALSIGN_GetFlashSize), (12 bytes).
+    Removing cw32f003_digitalsign.o(i.DIGITALSIGN_GetPinCount), (12 bytes).
+    Removing cw32f003_digitalsign.o(i.DIGITALSIGN_GetRamSize), (12 bytes).
+    Removing cw32f003_flash.o(.rev16_text), (4 bytes).
+    Removing cw32f003_flash.o(.revsh_text), (4 bytes).
+    Removing cw32f003_flash.o(i.FLASH_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_flash.o(i.FLASH_ErasePage), (104 bytes).
+    Removing cw32f003_flash.o(i.FLASH_GetITStatus), (24 bytes).
+    Removing cw32f003_flash.o(i.FLASH_GetReadOutLevel), (16 bytes).
+    Removing cw32f003_flash.o(i.FLASH_GetStatus), (64 bytes).
+    Removing cw32f003_flash.o(i.FLASH_ITConfig), (32 bytes).
+    Removing cw32f003_flash.o(i.FLASH_LockPage), (40 bytes).
+    Removing cw32f003_flash.o(i.FLASH_LockPages), (68 bytes).
+    Removing cw32f003_flash.o(i.FLASH_SetReadOutLevel), (52 bytes).
+    Removing cw32f003_flash.o(i.FLASH_UnlockAllPages), (16 bytes).
+    Removing cw32f003_flash.o(i.FLASH_UnlockPage), (40 bytes).
+    Removing cw32f003_flash.o(i.FLASH_WirteBytes), (124 bytes).
+    Removing cw32f003_gpio.o(.rev16_text), (4 bytes).
+    Removing cw32f003_gpio.o(.revsh_text), (4 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_ConfigFilter), (8 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_DeInit), (56 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_GPIO2NRST), (28 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_GPIO2SWD), (28 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_NRST2GPIO), (24 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_SWD2GPIO), (24 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_TogglePin), (4 bytes).
+    Removing cw32f003_gtim.o(.rev16_text), (4 bytes).
+    Removing cw32f003_gtim.o(.revsh_text), (4 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_ClearITPendingBit), (12 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_Cmd), (24 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_DeInit), (32 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_ETRConfig), (36 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_EncodeInit), (84 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_GetCapture1), (12 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_GetCapture2), (12 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_GetCapture3), (12 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_GetCapture4), (12 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_GetITStatus), (24 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_ICChannelConfig), (32 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_ICInit), (60 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_ITConfig), (32 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_ITRConfig), (44 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_OCInit), (28 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_SetCompare1), (12 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_SetCompare2), (12 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_SetCompare3), (12 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_SetCompare4), (12 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_SetCounterValue), (12 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_SetPrescaler), (24 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_SetReloadValue), (12 bytes).
+    Removing cw32f003_gtim.o(i.GTIM_TimeBaseInit), (52 bytes).
+    Removing cw32f003_i2c.o(.rev16_text), (4 bytes).
+    Removing cw32f003_i2c.o(.revsh_text), (4 bytes).
+    Removing cw32f003_i2c.o(i.I2C_AcknowledgeConfig), (40 bytes).
+    Removing cw32f003_i2c.o(i.I2C_BaudGeneratorEnable), (40 bytes).
+    Removing cw32f003_i2c.o(i.I2C_ClearIrq), (20 bytes).
+    Removing cw32f003_i2c.o(i.I2C_Cmd), (40 bytes).
+    Removing cw32f003_i2c.o(i.I2C_DeInit), (44 bytes).
+    Removing cw32f003_i2c.o(i.I2C_FilterConfig), (40 bytes).
+    Removing cw32f003_i2c.o(i.I2C_GcConfig), (40 bytes).
+    Removing cw32f003_i2c.o(i.I2C_GenerateSTART), (100 bytes).
+    Removing cw32f003_i2c.o(i.I2C_GenerateSTOP), (40 bytes).
+    Removing cw32f003_i2c.o(i.I2C_GetIrq), (16 bytes).
+    Removing cw32f003_i2c.o(i.I2C_GetState), (12 bytes).
+    Removing cw32f003_i2c.o(i.I2C_MasterReadEepomData), (228 bytes).
+    Removing cw32f003_i2c.o(i.I2C_MasterRecDataFromSlave), (190 bytes).
+    Removing cw32f003_i2c.o(i.I2C_MasterSendDataToSlave), (144 bytes).
+    Removing cw32f003_i2c.o(i.I2C_MasterWriteEepromData), (152 bytes).
+    Removing cw32f003_i2c.o(i.I2C_Master_Init), (42 bytes).
+    Removing cw32f003_i2c.o(i.I2C_ReceiveData), (12 bytes).
+    Removing cw32f003_i2c.o(i.I2C_Send7bitAddress), (24 bytes).
+    Removing cw32f003_i2c.o(i.I2C_SendData), (12 bytes).
+    Removing cw32f003_i2c.o(i.I2C_SetBaud), (12 bytes).
+    Removing cw32f003_i2c.o(i.I2C_SetOwnSlaveAddress0), (28 bytes).
+    Removing cw32f003_i2c.o(i.I2C_SetOwnSlaveAddress1), (28 bytes).
+    Removing cw32f003_i2c.o(i.I2C_SetOwnSlaveAddress2), (28 bytes).
+    Removing cw32f003_i2c.o(i.I2C_SlaveRecDataFromMaster), (108 bytes).
+    Removing cw32f003_i2c.o(i.I2C_SlaveSendDataToMaster), (114 bytes).
+    Removing cw32f003_i2c.o(i.I2C_Slave_Init), (42 bytes).
+    Removing cw32f003_i2c.o(i.I2C_SoftwareResetCmd), (44 bytes).
+    Removing cw32f003_iwdt.o(.rev16_text), (4 bytes).
+    Removing cw32f003_iwdt.o(.revsh_text), (4 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_DeInit), (32 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_GetCounterValue), (20 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_GetFlagStatus), (16 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_ITConfig), (72 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_Init), (100 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_SetPrescaler), (56 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_SetReloadValue), (44 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_SetWindowValue), (44 bytes).
+    Removing cw32f003_lvd.o(.rev16_text), (4 bytes).
+    Removing cw32f003_lvd.o(.revsh_text), (4 bytes).
+    Removing cw32f003_lvd.o(i.LVD_ClearIrq), (20 bytes).
+    Removing cw32f003_lvd.o(i.LVD_DeInit), (12 bytes).
+    Removing cw32f003_lvd.o(i.LVD_Disable), (20 bytes).
+    Removing cw32f003_lvd.o(i.LVD_DisableIrq), (40 bytes).
+    Removing cw32f003_lvd.o(i.LVD_DisableNvic), (28 bytes).
+    Removing cw32f003_lvd.o(i.LVD_Enable), (20 bytes).
+    Removing cw32f003_lvd.o(i.LVD_EnableIrq), (32 bytes).
+    Removing cw32f003_lvd.o(i.LVD_EnableNvic), (36 bytes).
+    Removing cw32f003_lvd.o(i.LVD_GetFilterResult), (16 bytes).
+    Removing cw32f003_lvd.o(i.LVD_GetFlagStatus), (24 bytes).
+    Removing cw32f003_lvd.o(i.LVD_GetIrqStatus), (16 bytes).
+    Removing cw32f003_lvd.o(i.LVD_Init), (68 bytes).
+    Removing cw32f003_lvd.o(i.LVD_TrigConfig), (40 bytes).
+    Removing cw32f003_lvd.o(i.NVIC_ClearPendingIRQ), (20 bytes).
+    Removing cw32f003_lvd.o(i.NVIC_SetPriority), (120 bytes).
+    Removing cw32f003_pwr.o(.rev16_text), (4 bytes).
+    Removing cw32f003_pwr.o(.revsh_text), (4 bytes).
+    Removing cw32f003_pwr.o(i.PWR_Config), (32 bytes).
+    Removing cw32f003_pwr.o(i.PWR_GotoLpmMode), (4 bytes).
+    Removing cw32f003_ram.o(.rev16_text), (4 bytes).
+    Removing cw32f003_ram.o(.revsh_text), (4 bytes).
+    Removing cw32f003_ram.o(i.RAM_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_ram.o(i.RAM_GetErrorAddress), (12 bytes).
+    Removing cw32f003_ram.o(i.RAM_GetITStatus), (24 bytes).
+    Removing cw32f003_ram.o(i.RAM_ITConfig), (36 bytes).
+    Removing cw32f003_rcc.o(.rev16_text), (4 bytes).
+    Removing cw32f003_rcc.o(.revsh_text), (4 bytes).
+    Removing cw32f003_rcc.o(i.RCC_AHBPeriphClk_Enable), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_AHBPeriphReset), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_APBPeriphClk_Enable1), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_APBPeriphClk_Enable2), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_APBPeriphReset1), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_APBPeriphReset2), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_ATIMITRSelect), (24 bytes).
+    Removing cw32f003_rcc.o(i.RCC_BTIM1ITRSelect), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_BTIM2ITRSelect), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_BTIM3ITRSelect), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_CCS_Config), (48 bytes).
+    Removing cw32f003_rcc.o(i.RCC_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_rcc.o(i.RCC_ClearRstFlag), (16 bytes).
+    Removing cw32f003_rcc.o(i.RCC_DEBUG_Config), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_DeInit), (132 bytes).
+    Removing cw32f003_rcc.o(i.RCC_GTIMITRSelect), (28 bytes).
+    Removing cw32f003_rcc.o(i.RCC_GetAllRstFlag), (12 bytes).
+    Removing cw32f003_rcc.o(i.RCC_GetAllStableFlag), (12 bytes).
+    Removing cw32f003_rcc.o(i.RCC_GetITStatus), (24 bytes).
+    Removing cw32f003_rcc.o(i.RCC_GetRstFlag), (24 bytes).
+    Removing cw32f003_rcc.o(i.RCC_GetStableFlag), (24 bytes).
+    Removing cw32f003_rcc.o(i.RCC_HCLK_OUT), (64 bytes).
+    Removing cw32f003_rcc.o(i.RCC_HEX_Disable), (28 bytes).
+    Removing cw32f003_rcc.o(i.RCC_HEX_Enable), (176 bytes).
+    Removing cw32f003_rcc.o(i.RCC_HSI_Disable), (28 bytes).
+    Removing cw32f003_rcc.o(i.RCC_ITConfig), (48 bytes).
+    Removing cw32f003_rcc.o(i.RCC_LOCKUP_Config), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_LSELOCK_Config), (28 bytes).
+    Removing cw32f003_rcc.o(i.RCC_LSI_Disable), (28 bytes).
+    Removing cw32f003_rcc.o(i.RCC_LSI_Enable), (64 bytes).
+    Removing cw32f003_rcc.o(i.RCC_MCO_OUT), (76 bytes).
+    Removing cw32f003_rcc.o(i.RCC_PCLK_OUT), (68 bytes).
+    Removing cw32f003_rcc.o(i.RCC_RSTIO_Config), (20 bytes).
+    Removing cw32f003_rcc.o(i.RCC_SWDIO_Config), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_SysClk_Switch), (64 bytes).
+    Removing cw32f003_rcc.o(i.RCC_Sysctrl_GetPClkFreq), (32 bytes).
+    Removing cw32f003_rcc.o(i.RCC_WAKEUPCLK_Config), (32 bytes).
+    Removing cw32f003_spi.o(.rev16_text), (4 bytes).
+    Removing cw32f003_spi.o(.revsh_text), (4 bytes).
+    Removing cw32f003_spi.o(i.SPI_BiDirectionalLineConfig), (12 bytes).
+    Removing cw32f003_spi.o(i.SPI_ClearFlag), (16 bytes).
+    Removing cw32f003_spi.o(i.SPI_ClearITPendingBit), (16 bytes).
+    Removing cw32f003_spi.o(i.SPI_Cmd), (28 bytes).
+    Removing cw32f003_spi.o(i.SPI_DataSizeConfig), (24 bytes).
+    Removing cw32f003_spi.o(i.SPI_DeInit), (36 bytes).
+    Removing cw32f003_spi.o(i.SPI_FlushSendBuff), (20 bytes).
+    Removing cw32f003_spi.o(i.SPI_GetFlagStatus), (24 bytes).
+    Removing cw32f003_spi.o(i.SPI_GetITStatus), (24 bytes).
+    Removing cw32f003_spi.o(i.SPI_ITConfig), (32 bytes).
+    Removing cw32f003_spi.o(i.SPI_Init), (60 bytes).
+    Removing cw32f003_spi.o(i.SPI_MISOOutputConfig), (32 bytes).
+    Removing cw32f003_spi.o(i.SPI_NSSInternalSoftwareConfig), (12 bytes).
+    Removing cw32f003_spi.o(i.SPI_ReceiveData), (12 bytes).
+    Removing cw32f003_spi.o(i.SPI_SendData), (12 bytes).
+    Removing cw32f003_spi.o(i.SPI_StructInit), (28 bytes).
+    Removing cw32f003_systick.o(.rev16_text), (4 bytes).
+    Removing cw32f003_systick.o(.revsh_text), (4 bytes).
+    Removing cw32f003_systick.o(i.GetTick), (12 bytes).
+    Removing cw32f003_systick.o(i.ResumeTick), (20 bytes).
+    Removing cw32f003_systick.o(i.SuspendTick), (20 bytes).
+    Removing cw32f003_systick.o(i.SysTickDelay), (44 bytes).
+    Removing cw32f003_uart.o(.rev16_text), (4 bytes).
+    Removing cw32f003_uart.o(.revsh_text), (4 bytes).
+    Removing cw32f003_uart.o(i.UART1_DeInit), (36 bytes).
+    Removing cw32f003_uart.o(i.UART2_DeInit), (32 bytes).
+    Removing cw32f003_uart.o(i.USART_ClearFlag), (8 bytes).
+    Removing cw32f003_uart.o(i.USART_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_uart.o(i.USART_ClockInit), (28 bytes).
+    Removing cw32f003_uart.o(i.USART_ClockStructInit), (8 bytes).
+    Removing cw32f003_uart.o(i.USART_DirectionModeCmd), (26 bytes).
+    Removing cw32f003_uart.o(i.USART_GetFlagStatus), (18 bytes).
+    Removing cw32f003_uart.o(i.USART_GetITStatus), (18 bytes).
+    Removing cw32f003_uart.o(i.USART_HalfDuplexCmd), (20 bytes).
+    Removing cw32f003_uart.o(i.USART_ITConfig), (26 bytes).
+    Removing cw32f003_uart.o(i.USART_Init), (372 bytes).
+    Removing cw32f003_uart.o(i.USART_InvPinCmd), (26 bytes).
+    Removing cw32f003_uart.o(i.USART_ReceiveData), (10 bytes).
+    Removing cw32f003_uart.o(i.USART_ReceiveData_8bit), (8 bytes).
+    Removing cw32f003_uart.o(i.USART_SendData), (8 bytes).
+    Removing cw32f003_uart.o(i.USART_SendData_8bit), (4 bytes).
+    Removing cw32f003_uart.o(i.USART_SetMultiMode), (32 bytes).
+    Removing cw32f003_uart.o(i.USART_StructInit), (28 bytes).
+    Removing cw32f003_vc.o(.rev16_text), (4 bytes).
+    Removing cw32f003_vc.o(.revsh_text), (4 bytes).
+    Removing cw32f003_vc.o(i.NVIC_ClearPendingIRQ), (20 bytes).
+    Removing cw32f003_vc.o(i.NVIC_SetPriority), (120 bytes).
+    Removing cw32f003_vc.o(i.VC1VC2_BlankInit), (12 bytes).
+    Removing cw32f003_vc.o(i.VC1VC2_DIVDeInit), (16 bytes).
+    Removing cw32f003_vc.o(i.VC1VC2_DIVInit), (92 bytes).
+    Removing cw32f003_vc.o(i.VC1VC2_INNInit), (112 bytes).
+    Removing cw32f003_vc.o(i.VC1VC2_OutInit), (8 bytes).
+    Removing cw32f003_vc.o(i.VC1_BlankCfg), (36 bytes).
+    Removing cw32f003_vc.o(i.VC1_ChannelDeInit), (24 bytes).
+    Removing cw32f003_vc.o(i.VC1_ChannelInit), (80 bytes).
+    Removing cw32f003_vc.o(i.VC1_ClearIrq), (20 bytes).
+    Removing cw32f003_vc.o(i.VC1_DisableChannel), (20 bytes).
+    Removing cw32f003_vc.o(i.VC1_DisableFilter), (20 bytes).
+    Removing cw32f003_vc.o(i.VC1_DisableIrq), (28 bytes).
+    Removing cw32f003_vc.o(i.VC1_EnableChannel), (32 bytes).
+    Removing cw32f003_vc.o(i.VC1_EnableFilter), (20 bytes).
+    Removing cw32f003_vc.o(i.VC1_EnableIrq), (32 bytes).
+    Removing cw32f003_vc.o(i.VC1_GetEnableStatus), (16 bytes).
+    Removing cw32f003_vc.o(i.VC1_GetFlagStatus), (24 bytes).
+    Removing cw32f003_vc.o(i.VC1_ITConfig), (32 bytes).
+    Removing cw32f003_vc.o(i.VC1_OutputCfg), (28 bytes).
+    Removing cw32f003_vc.o(i.VC1_PolarityCfg), (36 bytes).
+    Removing cw32f003_vc.o(i.VC1_WindowEnable), (36 bytes).
+    Removing cw32f003_vc.o(i.VC2_BlankCfg), (36 bytes).
+    Removing cw32f003_vc.o(i.VC2_ChannelDeInit), (24 bytes).
+    Removing cw32f003_vc.o(i.VC2_ChannelInit), (80 bytes).
+    Removing cw32f003_vc.o(i.VC2_ClearIrq), (20 bytes).
+    Removing cw32f003_vc.o(i.VC2_DisableChannel), (20 bytes).
+    Removing cw32f003_vc.o(i.VC2_DisableFilter), (20 bytes).
+    Removing cw32f003_vc.o(i.VC2_DisableIrq), (28 bytes).
+    Removing cw32f003_vc.o(i.VC2_EnableChannel), (32 bytes).
+    Removing cw32f003_vc.o(i.VC2_EnableFilter), (20 bytes).
+    Removing cw32f003_vc.o(i.VC2_EnableIrq), (32 bytes).
+    Removing cw32f003_vc.o(i.VC2_GetEnableStatus), (16 bytes).
+    Removing cw32f003_vc.o(i.VC2_GetFlagStatus), (24 bytes).
+    Removing cw32f003_vc.o(i.VC2_ITConfig), (40 bytes).
+    Removing cw32f003_vc.o(i.VC2_OutputCfg), (28 bytes).
+    Removing cw32f003_vc.o(i.VC2_PolarityCfg), (36 bytes).
+    Removing cw32f003_vc.o(i.VC2_WindowEnable), (36 bytes).
+    Removing cw32f003_vc.o(i.VC_DeInit), (40 bytes).
+    Removing cw32f003_vc.o(i.VC_DisableNvic), (32 bytes).
+    Removing cw32f003_vc.o(i.VC_EnableNvic), (48 bytes).
+    Removing cw32f003_wwdt.o(.rev16_text), (4 bytes).
+    Removing cw32f003_wwdt.o(.revsh_text), (4 bytes).
+    Removing cw32f003_wwdt.o(i.WWDT_ClearFlag), (20 bytes).
+    Removing cw32f003_wwdt.o(i.WWDT_Cmd), (20 bytes).
+    Removing cw32f003_wwdt.o(i.WWDT_DeInit), (32 bytes).
+    Removing cw32f003_wwdt.o(i.WWDT_EnableIT), (24 bytes).
+    Removing cw32f003_wwdt.o(i.WWDT_GetCounterValue), (16 bytes).
+    Removing cw32f003_wwdt.o(i.WWDT_GetFlagStatus), (12 bytes).
+    Removing cw32f003_wwdt.o(i.WWDT_GetWindowValue), (16 bytes).
+    Removing cw32f003_wwdt.o(i.WWDT_Init), (76 bytes).
+    Removing cw32f003_wwdt.o(i.WWDT_Refresh), (24 bytes).
+    Removing cw32f003_wwdt.o(i.WWDT_SetPrescaler), (24 bytes).
+    Removing cw32f003_wwdt.o(i.WWDT_SetWindowValue), (24 bytes).
+    Removing system_cw32f003.o(.rev16_text), (4 bytes).
+    Removing system_cw32f003.o(.revsh_text), (4 bytes).
+    Removing system_cw32f003.o(i.MemClr), (32 bytes).
+    Removing nixie.o(.rev16_text), (4 bytes).
+    Removing nixie.o(.revsh_text), (4 bytes).
+    Removing nixie.o(i.Nixie_ClearNumInfo), (24 bytes).
+    Removing nixie.o(i.Nixie_NumClear), (96 bytes).
+    Removing nixie.o(i.Nixie_SetDot), (20 bytes).
+    Removing keystatemachine.o(.rev16_text), (4 bytes).
+    Removing keystatemachine.o(.revsh_text), (4 bytes).
+    Removing calibration.o(.rev16_text), (4 bytes).
+    Removing calibration.o(.revsh_text), (4 bytes).
+    Removing menu.o(.rev16_text), (4 bytes).
+    Removing menu.o(.revsh_text), (4 bytes).
+    Removing flash.o(.rev16_text), (4 bytes).
+    Removing flash.o(.revsh_text), (4 bytes).
+    Removing adc.o(.rev16_text), (4 bytes).
+    Removing adc.o(.revsh_text), (4 bytes).
+    Removing btim.o(.rev16_text), (4 bytes).
+    Removing btim.o(.revsh_text), (4 bytes).
+    Removing uart.o(.rev16_text), (4 bytes).
+    Removing uart.o(.revsh_text), (4 bytes).
+    Removing uart.o(i.UART_Init), (160 bytes).
+    Removing uart.o(i.UART_SendString), (60 bytes).
+    Removing fadd.o(.text), (178 bytes).
+    Removing fdiv.o(.text), (124 bytes).
+    Removing dadd.o(.text), (356 bytes).
+    Removing fflti.o(.text), (22 bytes).
+    Removing dfixui.o(.text), (60 bytes).
+    Removing f2d.o(.text), (40 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_Cmd), (16 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_Refresh), (16 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_Unlock), (16 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_Lock), (16 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_Stop), (28 bytes).
+    Removing cw32f003_iwdt.o(i.IWDT_ClearOVFlag), (20 bytes).
+
+426 unused section(s) (total 14324 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  startup_cw32f003.o(RESET)
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/d2f.c                  0x00000000   Number         0  d2f.o ABSOLUTE
+    ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  fadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixui.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixui.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  ffltui.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  fflti.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dflti.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  fmul.o ABSOLUTE
+    Component\Calibration\Calibration.c      0x00000000   Number         0  calibration.o ABSOLUTE
+    Component\Filter\AverageFilter.c         0x00000000   Number         0  averagefilter.o ABSOLUTE
+    Component\Menu\Menu.c                    0x00000000   Number         0  menu.o ABSOLUTE
+    Component\\Calibration\\Calibration.c    0x00000000   Number         0  calibration.o ABSOLUTE
+    Component\\Menu\\Menu.c                  0x00000000   Number         0  menu.o ABSOLUTE
+    Hardware\Key\KeyStateMachine.c           0x00000000   Number         0  keystatemachine.o ABSOLUTE
+    Hardware\Nixie\Nixie.c                   0x00000000   Number         0  nixie.o ABSOLUTE
+    Hardware\\Key\\KeyStateMachine.c         0x00000000   Number         0  keystatemachine.o ABSOLUTE
+    Hardware\\Nixie\\Nixie.c                 0x00000000   Number         0  nixie.o ABSOLUTE
+    Libraries\\src\\cw32f003_adc.c           0x00000000   Number         0  cw32f003_adc.o ABSOLUTE
+    Libraries\\src\\cw32f003_atim.c          0x00000000   Number         0  cw32f003_atim.o ABSOLUTE
+    Libraries\\src\\cw32f003_awt.c           0x00000000   Number         0  cw32f003_awt.o ABSOLUTE
+    Libraries\\src\\cw32f003_btim.c          0x00000000   Number         0  cw32f003_btim.o ABSOLUTE
+    Libraries\\src\\cw32f003_crc.c           0x00000000   Number         0  cw32f003_crc.o ABSOLUTE
+    Libraries\\src\\cw32f003_debug.c         0x00000000   Number         0  cw32f003_debug.o ABSOLUTE
+    Libraries\\src\\cw32f003_digitalsign.c   0x00000000   Number         0  cw32f003_digitalsign.o ABSOLUTE
+    Libraries\\src\\cw32f003_flash.c         0x00000000   Number         0  cw32f003_flash.o ABSOLUTE
+    Libraries\\src\\cw32f003_gpio.c          0x00000000   Number         0  cw32f003_gpio.o ABSOLUTE
+    Libraries\\src\\cw32f003_gtim.c          0x00000000   Number         0  cw32f003_gtim.o ABSOLUTE
+    Libraries\\src\\cw32f003_i2c.c           0x00000000   Number         0  cw32f003_i2c.o ABSOLUTE
+    Libraries\\src\\cw32f003_iwdt.c          0x00000000   Number         0  cw32f003_iwdt.o ABSOLUTE
+    Libraries\\src\\cw32f003_lvd.c           0x00000000   Number         0  cw32f003_lvd.o ABSOLUTE
+    Libraries\\src\\cw32f003_pwr.c           0x00000000   Number         0  cw32f003_pwr.o ABSOLUTE
+    Libraries\\src\\cw32f003_ram.c           0x00000000   Number         0  cw32f003_ram.o ABSOLUTE
+    Libraries\\src\\cw32f003_rcc.c           0x00000000   Number         0  cw32f003_rcc.o ABSOLUTE
+    Libraries\\src\\cw32f003_spi.c           0x00000000   Number         0  cw32f003_spi.o ABSOLUTE
+    Libraries\\src\\cw32f003_systick.c       0x00000000   Number         0  cw32f003_systick.o ABSOLUTE
+    Libraries\\src\\cw32f003_uart.c          0x00000000   Number         0  cw32f003_uart.o ABSOLUTE
+    Libraries\\src\\cw32f003_vc.c            0x00000000   Number         0  cw32f003_vc.o ABSOLUTE
+    Libraries\\src\\cw32f003_wwdt.c          0x00000000   Number         0  cw32f003_wwdt.o ABSOLUTE
+    Libraries\\src\\system_cw32f003.c        0x00000000   Number         0  system_cw32f003.o ABSOLUTE
+    Libraries\src\cw32f003_adc.c             0x00000000   Number         0  cw32f003_adc.o ABSOLUTE
+    Libraries\src\cw32f003_atim.c            0x00000000   Number         0  cw32f003_atim.o ABSOLUTE
+    Libraries\src\cw32f003_awt.c             0x00000000   Number         0  cw32f003_awt.o ABSOLUTE
+    Libraries\src\cw32f003_btim.c            0x00000000   Number         0  cw32f003_btim.o ABSOLUTE
+    Libraries\src\cw32f003_crc.c             0x00000000   Number         0  cw32f003_crc.o ABSOLUTE
+    Libraries\src\cw32f003_debug.c           0x00000000   Number         0  cw32f003_debug.o ABSOLUTE
+    Libraries\src\cw32f003_digitalsign.c     0x00000000   Number         0  cw32f003_digitalsign.o ABSOLUTE
+    Libraries\src\cw32f003_flash.c           0x00000000   Number         0  cw32f003_flash.o ABSOLUTE
+    Libraries\src\cw32f003_gpio.c            0x00000000   Number         0  cw32f003_gpio.o ABSOLUTE
+    Libraries\src\cw32f003_gtim.c            0x00000000   Number         0  cw32f003_gtim.o ABSOLUTE
+    Libraries\src\cw32f003_i2c.c             0x00000000   Number         0  cw32f003_i2c.o ABSOLUTE
+    Libraries\src\cw32f003_iwdt.c            0x00000000   Number         0  cw32f003_iwdt.o ABSOLUTE
+    Libraries\src\cw32f003_lvd.c             0x00000000   Number         0  cw32f003_lvd.o ABSOLUTE
+    Libraries\src\cw32f003_pwr.c             0x00000000   Number         0  cw32f003_pwr.o ABSOLUTE
+    Libraries\src\cw32f003_ram.c             0x00000000   Number         0  cw32f003_ram.o ABSOLUTE
+    Libraries\src\cw32f003_rcc.c             0x00000000   Number         0  cw32f003_rcc.o ABSOLUTE
+    Libraries\src\cw32f003_spi.c             0x00000000   Number         0  cw32f003_spi.o ABSOLUTE
+    Libraries\src\cw32f003_systick.c         0x00000000   Number         0  cw32f003_systick.o ABSOLUTE
+    Libraries\src\cw32f003_uart.c            0x00000000   Number         0  cw32f003_uart.o ABSOLUTE
+    Libraries\src\cw32f003_vc.c              0x00000000   Number         0  cw32f003_vc.o ABSOLUTE
+    Libraries\src\cw32f003_wwdt.c            0x00000000   Number         0  cw32f003_wwdt.o ABSOLUTE
+    Libraries\src\system_cw32f003.c          0x00000000   Number         0  system_cw32f003.o ABSOLUTE
+    System\ADC\ADC.c                         0x00000000   Number         0  adc.o ABSOLUTE
+    System\BTIM\BTIM.c                       0x00000000   Number         0  btim.o ABSOLUTE
+    System\FLASH\FLASH.c                     0x00000000   Number         0  flash.o ABSOLUTE
+    System\UART\UART.c                       0x00000000   Number         0  uart.o ABSOLUTE
+    System\\ADC\\ADC.c                       0x00000000   Number         0  adc.o ABSOLUTE
+    System\\BTIM\\BTIM.c                     0x00000000   Number         0  btim.o ABSOLUTE
+    System\\FLASH\\FLASH.c                   0x00000000   Number         0  flash.o ABSOLUTE
+    System\\UART\\UART.c                     0x00000000   Number         0  uart.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    interrupts_cw32f003.c                    0x00000000   Number         0  interrupts_cw32f003.o ABSOLUTE
+    interrupts_cw32f003.c                    0x00000000   Number         0  interrupts_cw32f003.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    startup_cw32f003.s                       0x00000000   Number         0  startup_cw32f003.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x000000c0   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x000000c0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x000000c4   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x000000c8   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x000000c8   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x000000c8   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x000000d0   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x000000d0   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x000000d0   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x000000d0   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x000000d4   Section       40  startup_cw32f003.o(.text)
+    .text                                    0x000000fc   Section        0  uidiv.o(.text)
+    .text                                    0x00000128   Section        0  idiv.o(.text)
+    .text                                    0x00000150   Section        0  memcpya.o(.text)
+    .text                                    0x00000174   Section        0  fmul.o(.text)
+    .text                                    0x000001f0   Section        0  dmul.o(.text)
+    .text                                    0x000002c0   Section        0  ddiv.o(.text)
+    .text                                    0x000003b0   Section        0  ffltui.o(.text)
+    .text                                    0x000003c0   Section        0  dflti.o(.text)
+    .text                                    0x000003e8   Section        0  ffixui.o(.text)
+    .text                                    0x00000410   Section        0  d2f.o(.text)
+    .text                                    0x00000448   Section        0  llshl.o(.text)
+    .text                                    0x00000468   Section        0  llushr.o(.text)
+    .text                                    0x0000048a   Section        0  fepilogue.o(.text)
+    .text                                    0x0000048a   Section        0  iusefp.o(.text)
+    .text                                    0x0000050c   Section        0  depilogue.o(.text)
+    .text                                    0x000005cc   Section       36  init.o(.text)
+    i.ADC_BufEnSerialCh                      0x000005f0   Section        0  cw32f003_adc.o(i.ADC_BufEnSerialCh)
+    i.ADC_ChannelInit                        0x00000634   Section        0  adc.o(i.ADC_ChannelInit)
+    i.ADC_ClearITPendingAll                  0x000006d0   Section        0  cw32f003_adc.o(i.ADC_ClearITPendingAll)
+    i.ADC_Enable                             0x000006e4   Section        0  cw32f003_adc.o(i.ADC_Enable)
+    i.ADC_GetITStatus                        0x00000704   Section        0  cw32f003_adc.o(i.ADC_GetITStatus)
+    i.ADC_GetSqr0Result                      0x0000071c   Section        0  cw32f003_adc.o(i.ADC_GetSqr0Result)
+    i.ADC_GetSqr1Result                      0x00000730   Section        0  cw32f003_adc.o(i.ADC_GetSqr1Result)
+    i.ADC_GetValue                           0x00000744   Section        0  adc.o(i.ADC_GetValue)
+    i.ADC_IRQHandler                         0x0000075c   Section        0  interrupts_cw32f003.o(i.ADC_IRQHandler)
+    i.ADC_Init                               0x00000760   Section        0  cw32f003_adc.o(i.ADC_Init)
+    i.ADC_SerialChCommon                     0x000007e4   Section        0  cw32f003_adc.o(i.ADC_SerialChCommon)
+    i.ADC_SerialChContinuousModeCfg          0x00000838   Section        0  cw32f003_adc.o(i.ADC_SerialChContinuousModeCfg)
+    i.ADC_SoftwareStartConvCmd               0x00000858   Section        0  cw32f003_adc.o(i.ADC_SoftwareStartConvCmd)
+    i.ADC_Sqr01ChannelCfg                    0x0000087c   Section        0  cw32f003_adc.o(i.ADC_Sqr01ChannelCfg)
+    i.ADC_Sqr02ChannelCfg                    0x000008b0   Section        0  cw32f003_adc.o(i.ADC_Sqr02ChannelCfg)
+    i.ADC_Sqr03ChannelCfg                    0x000008f0   Section        0  cw32f003_adc.o(i.ADC_Sqr03ChannelCfg)
+    i.ADC_Sqr0ChannelCfg                     0x00000938   Section        0  cw32f003_adc.o(i.ADC_Sqr0ChannelCfg)
+    i.ADC_StructInit                         0x00000960   Section        0  cw32f003_adc.o(i.ADC_StructInit)
+    i.ADC_ToElectricity                      0x00000978   Section        0  calibration.o(i.ADC_ToElectricity)
+    i.ADC_ToVoltage                          0x0000098c   Section        0  calibration.o(i.ADC_ToVoltage)
+    i.AWT_IRQHandler                         0x000009b4   Section        0  interrupts_cw32f003.o(i.AWT_IRQHandler)
+    i.AverageFilter                          0x000009b8   Section        0  averagefilter.o(i.AverageFilter)
+    i.BTIM1_IRQHandler                       0x00000a0c   Section        0  main.o(i.BTIM1_IRQHandler)
+    i.BTIM1_Init                             0x00000a2c   Section        0  btim.o(i.BTIM1_Init)
+    i.BTIM2_IRQHandler                       0x00000a84   Section        0  main.o(i.BTIM2_IRQHandler)
+    i.BTIM2_Init                             0x00000b2c   Section        0  btim.o(i.BTIM2_Init)
+    i.BTIM3_IRQHandler                       0x00000b84   Section        0  interrupts_cw32f003.o(i.BTIM3_IRQHandler)
+    i.BTIM_ClearITPendingBit                 0x00000b86   Section        0  cw32f003_btim.o(i.BTIM_ClearITPendingBit)
+    i.BTIM_Cmd                               0x00000b8e   Section        0  cw32f003_btim.o(i.BTIM_Cmd)
+    i.BTIM_GetITStatus                       0x00000ba6   Section        0  cw32f003_btim.o(i.BTIM_GetITStatus)
+    i.BTIM_ITConfig                          0x00000bb8   Section        0  cw32f003_btim.o(i.BTIM_ITConfig)
+    i.BTIM_TimeBaseInit                      0x00000bcc   Section        0  cw32f003_btim.o(i.BTIM_TimeBaseInit)
+    i.Calibration_ReadInfo                   0x00000bec   Section        0  calibration.o(i.Calibration_ReadInfo)
+    i.Calibration_SaveInfo                   0x00000c24   Section        0  calibration.o(i.Calibration_SaveInfo)
+    i.Calibration_SetInfo                    0x00000c3c   Section        0  calibration.o(i.Calibration_SetInfo)
+    i.ComputeK                               0x00000c48   Section        0  calibration.o(i.ComputeK)
+    i.FLASHRAM_IRQHandler                    0x00000cd0   Section        0  interrupts_cw32f003.o(i.FLASHRAM_IRQHandler)
+    i.FLASH_Erase                            0x00000cd4   Section        0  flash.o(i.FLASH_Erase)
+    i.FLASH_ErasePages                       0x00000d00   Section        0  cw32f003_flash.o(i.FLASH_ErasePages)
+    i.FLASH_LockAllPages                     0x00000d7c   Section        0  cw32f003_flash.o(i.FLASH_LockAllPages)
+    i.FLASH_Read                             0x00000d8c   Section        0  flash.o(i.FLASH_Read)
+    i.FLASH_SetLatency                       0x00000db0   Section        0  cw32f003_flash.o(i.FLASH_SetLatency)
+    i.FLASH_UnlockPages                      0x00000dd4   Section        0  cw32f003_flash.o(i.FLASH_UnlockPages)
+    i.FLASH_WirteHalfWords                   0x00000e18   Section        0  cw32f003_flash.o(i.FLASH_WirteHalfWords)
+    i.FLASH_Write                            0x00000eb0   Section        0  flash.o(i.FLASH_Write)
+    i.FirmwareDelay                          0x00000eec   Section        0  system_cw32f003.o(i.FirmwareDelay)
+    i.GPIOA_IRQHandler                       0x00000efe   Section        0  interrupts_cw32f003.o(i.GPIOA_IRQHandler)
+    i.GPIOB_IRQHandler                       0x00000f00   Section        0  interrupts_cw32f003.o(i.GPIOB_IRQHandler)
+    i.GPIOC_IRQHandler                       0x00000f02   Section        0  interrupts_cw32f003.o(i.GPIOC_IRQHandler)
+    i.GPIO_Init                              0x00000f04   Section        0  cw32f003_gpio.o(i.GPIO_Init)
+    i.GPIO_ReadPin                           0x00000fe6   Section        0  cw32f003_gpio.o(i.GPIO_ReadPin)
+    i.GPIO_WritePin                          0x00000ff8   Section        0  cw32f003_gpio.o(i.GPIO_WritePin)
+    i.GTIM_IRQHandler                        0x00001004   Section        0  interrupts_cw32f003.o(i.GTIM_IRQHandler)
+    i.HardFault_Handler                      0x00001006   Section        0  interrupts_cw32f003.o(i.HardFault_Handler)
+    i.I2C_IRQHandler                         0x0000100a   Section        0  interrupts_cw32f003.o(i.I2C_IRQHandler)
+    i.InitTick                               0x0000100c   Section        0  cw32f003_systick.o(i.InitTick)
+    i.KEY_GetAction                          0x00001078   Section        0  keystatemachine.o(i.KEY_GetAction)
+    i.Key_GetState                           0x0000109c   Section        0  keystatemachine.o(i.Key_GetState)
+    i.Key_Init                               0x00001200   Section        0  keystatemachine.o(i.Key_Init)
+    i.LVD_IRQHandler                         0x00001234   Section        0  interrupts_cw32f003.o(i.LVD_IRQHandler)
+    i.Menu_OnlyA                             0x00001238   Section        0  menu.o(i.Menu_OnlyA)
+    i.Menu_OnlyV                             0x000012b8   Section        0  menu.o(i.Menu_OnlyV)
+    i.Menu_SetA1                             0x00001338   Section        0  menu.o(i.Menu_SetA1)
+    i.Menu_SetA2                             0x0000138c   Section        0  menu.o(i.Menu_SetA2)
+    i.Menu_SetV1                             0x000013e0   Section        0  menu.o(i.Menu_SetV1)
+    i.Menu_SetV2                             0x00001434   Section        0  menu.o(i.Menu_SetV2)
+    i.Menu_VA                                0x00001488   Section        0  menu.o(i.Menu_VA)
+    i.NMI_Handler                            0x000015fc   Section        0  interrupts_cw32f003.o(i.NMI_Handler)
+    i.NVIC_EnableIRQ                         0x00001600   Section        0  btim.o(i.NVIC_EnableIRQ)
+    NVIC_EnableIRQ                           0x00001601   Thumb Code    14  btim.o(i.NVIC_EnableIRQ)
+    i.NVIC_SetPriority                       0x00001614   Section        0  cw32f003_systick.o(i.NVIC_SetPriority)
+    NVIC_SetPriority                         0x00001615   Thumb Code   110  cw32f003_systick.o(i.NVIC_SetPriority)
+    i.Nixie_CloseLocation                    0x0000168c   Section        0  nixie.o(i.Nixie_CloseLocation)
+    i.Nixie_Init                             0x000016d8   Section        0  nixie.o(i.Nixie_Init)
+    i.Nixie_SetLocation                      0x0000173c   Section        0  nixie.o(i.Nixie_SetLocation)
+    i.Nixie_SetNum                           0x000017ac   Section        0  nixie.o(i.Nixie_SetNum)
+    i.Nixie_Show                             0x0000184c   Section        0  nixie.o(i.Nixie_Show)
+    i.PendSV_Handler                         0x00001880   Section        0  interrupts_cw32f003.o(i.PendSV_Handler)
+    i.RCC_Configuration                      0x00001884   Section        0  main.o(i.RCC_Configuration)
+    i.RCC_HCLKPRS_Config                     0x000018b0   Section        0  cw32f003_rcc.o(i.RCC_HCLKPRS_Config)
+    i.RCC_HSI_Enable                         0x000018d0   Section        0  cw32f003_rcc.o(i.RCC_HSI_Enable)
+    i.RCC_PCLKPRS_Config                     0x00001908   Section        0  cw32f003_rcc.o(i.RCC_PCLKPRS_Config)
+    i.RCC_SYSCLKSRC_Config                   0x00001928   Section        0  cw32f003_rcc.o(i.RCC_SYSCLKSRC_Config)
+    i.RCC_Sysctrl_GetHClkFreq                0x00001958   Section        0  cw32f003_rcc.o(i.RCC_Sysctrl_GetHClkFreq)
+    i.RCC_SystemCoreClockUpdate              0x000019d0   Section        0  cw32f003_rcc.o(i.RCC_SystemCoreClockUpdate)
+    i.SPI_IRQHandler                         0x000019dc   Section        0  interrupts_cw32f003.o(i.SPI_IRQHandler)
+    i.SVC_Handler                            0x000019de   Section        0  interrupts_cw32f003.o(i.SVC_Handler)
+    i.SYSCTRL_IRQHandler                     0x000019e0   Section        0  interrupts_cw32f003.o(i.SYSCTRL_IRQHandler)
+    i.SysTick_Handler                        0x000019e4   Section        0  cw32f003_systick.o(i.SysTick_Handler)
+    i.SystemCoreClockUpdate                  0x000019fc   Section        0  system_cw32f003.o(i.SystemCoreClockUpdate)
+    i.SystemInit                             0x00001a0c   Section        0  system_cw32f003.o(i.SystemInit)
+    i.UART1_IRQHandler                       0x00001a48   Section        0  interrupts_cw32f003.o(i.UART1_IRQHandler)
+    i.UART2_IRQHandler                       0x00001a4a   Section        0  interrupts_cw32f003.o(i.UART2_IRQHandler)
+    i.VC1_IRQHandler                         0x00001a4c   Section        0  interrupts_cw32f003.o(i.VC1_IRQHandler)
+    i.VC2_IRQHandler                         0x00001a4e   Section        0  interrupts_cw32f003.o(i.VC2_IRQHandler)
+    i.WDT_IRQHandler                         0x00001a50   Section        0  interrupts_cw32f003.o(i.WDT_IRQHandler)
+    i.__ARM_clz                              0x00001a52   Section        0  depilogue.o(i.__ARM_clz)
+    i.__ARM_common_switch8                   0x00001a80   Section        0  main.o(i.__ARM_common_switch8)
+    i.__scatterload_copy                     0x00001a9c   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00001aaa   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00001aac   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.main                                   0x00001abc   Section        0  main.o(i.main)
+    .constdata                               0x00001bd0   Section       64  cw32f003_rcc.o(.constdata)
+    .data                                    0x20000000   Section        7  main.o(.data)
+    .data                                    0x20000008   Section        9  cw32f003_systick.o(.data)
+    .data                                    0x20000014   Section        4  system_cw32f003.o(.data)
+    .data                                    0x20000018   Section       30  nixie.o(.data)
+    index                                    0x20000035   Data           1  nixie.o(.data)
+    .data                                    0x20000036   Section        6  keystatemachine.o(.data)
+    .data                                    0x2000003c   Section        8  calibration.o(.data)
+    .data                                    0x20000044   Section        4  adc.o(.data)
+    .bss                                     0x20000048   Section      400  main.o(.bss)
+    .bss                                     0x200001d8   Section       10  calibration.o(.bss)
+    STACK                                    0x200001e8   Section      512  startup_cw32f003.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  startup_cw32f003.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x000000c0   Data           0  startup_cw32f003.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  startup_cw32f003.o ABSOLUTE
+    __main                                   0x000000c1   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x000000c1   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x000000c5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x000000c9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x000000c9   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x000000c9   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x000000c9   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x000000d1   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x000000d1   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x000000d5   Thumb Code    14  startup_cw32f003.o(.text)
+    ATIM_IRQHandler                          0x000000ed   Thumb Code     0  startup_cw32f003.o(.text)
+    __aeabi_uidiv                            0x000000fd   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x000000fd   Thumb Code    44  uidiv.o(.text)
+    __aeabi_idiv                             0x00000129   Thumb Code     0  idiv.o(.text)
+    __aeabi_idivmod                          0x00000129   Thumb Code    40  idiv.o(.text)
+    __aeabi_memcpy                           0x00000151   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x00000151   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x00000151   Thumb Code     0  memcpya.o(.text)
+    __aeabi_fmul                             0x00000175   Thumb Code   122  fmul.o(.text)
+    __aeabi_dmul                             0x000001f1   Thumb Code   202  dmul.o(.text)
+    __aeabi_ddiv                             0x000002c1   Thumb Code   234  ddiv.o(.text)
+    __aeabi_ui2f                             0x000003b1   Thumb Code    14  ffltui.o(.text)
+    __aeabi_i2d                              0x000003c1   Thumb Code    34  dflti.o(.text)
+    __aeabi_f2uiz                            0x000003e9   Thumb Code    40  ffixui.o(.text)
+    __aeabi_d2f                              0x00000411   Thumb Code    56  d2f.o(.text)
+    __aeabi_llsl                             0x00000449   Thumb Code    32  llshl.o(.text)
+    _ll_shift_l                              0x00000449   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x00000469   Thumb Code    34  llushr.o(.text)
+    _ll_ushift_r                             0x00000469   Thumb Code     0  llushr.o(.text)
+    __I$use$fp                               0x0000048b   Thumb Code     0  iusefp.o(.text)
+    _float_round                             0x0000048b   Thumb Code    16  fepilogue.o(.text)
+    _float_epilogue                          0x0000049b   Thumb Code   114  fepilogue.o(.text)
+    _double_round                            0x0000050d   Thumb Code    26  depilogue.o(.text)
+    _double_epilogue                         0x00000527   Thumb Code   164  depilogue.o(.text)
+    __scatterload                            0x000005cd   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x000005cd   Thumb Code     0  init.o(.text)
+    ADC_BufEnSerialCh                        0x000005f1   Thumb Code    62  cw32f003_adc.o(i.ADC_BufEnSerialCh)
+    ADC_ChannelInit                          0x00000635   Thumb Code   146  adc.o(i.ADC_ChannelInit)
+    ADC_ClearITPendingAll                    0x000006d1   Thumb Code    14  cw32f003_adc.o(i.ADC_ClearITPendingAll)
+    ADC_Enable                               0x000006e5   Thumb Code    28  cw32f003_adc.o(i.ADC_Enable)
+    ADC_GetITStatus                          0x00000705   Thumb Code    20  cw32f003_adc.o(i.ADC_GetITStatus)
+    ADC_GetSqr0Result                        0x0000071d   Thumb Code    16  cw32f003_adc.o(i.ADC_GetSqr0Result)
+    ADC_GetSqr1Result                        0x00000731   Thumb Code    16  cw32f003_adc.o(i.ADC_GetSqr1Result)
+    ADC_GetValue                             0x00000745   Thumb Code    18  adc.o(i.ADC_GetValue)
+    ADC_IRQHandler                           0x0000075d   Thumb Code     2  interrupts_cw32f003.o(i.ADC_IRQHandler)
+    ADC_Init                                 0x00000761   Thumb Code   116  cw32f003_adc.o(i.ADC_Init)
+    ADC_SerialChCommon                       0x000007e5   Thumb Code    82  cw32f003_adc.o(i.ADC_SerialChCommon)
+    ADC_SerialChContinuousModeCfg            0x00000839   Thumb Code    26  cw32f003_adc.o(i.ADC_SerialChContinuousModeCfg)
+    ADC_SoftwareStartConvCmd                 0x00000859   Thumb Code    32  cw32f003_adc.o(i.ADC_SoftwareStartConvCmd)
+    ADC_Sqr01ChannelCfg                      0x0000087d   Thumb Code    44  cw32f003_adc.o(i.ADC_Sqr01ChannelCfg)
+    ADC_Sqr02ChannelCfg                      0x000008b1   Thumb Code    56  cw32f003_adc.o(i.ADC_Sqr02ChannelCfg)
+    ADC_Sqr03ChannelCfg                      0x000008f1   Thumb Code    68  cw32f003_adc.o(i.ADC_Sqr03ChannelCfg)
+    ADC_Sqr0ChannelCfg                       0x00000939   Thumb Code    32  cw32f003_adc.o(i.ADC_Sqr0ChannelCfg)
+    ADC_StructInit                           0x00000961   Thumb Code    24  cw32f003_adc.o(i.ADC_StructInit)
+    ADC_ToElectricity                        0x00000979   Thumb Code    16  calibration.o(i.ADC_ToElectricity)
+    ADC_ToVoltage                            0x0000098d   Thumb Code    34  calibration.o(i.ADC_ToVoltage)
+    AWT_IRQHandler                           0x000009b5   Thumb Code     2  interrupts_cw32f003.o(i.AWT_IRQHandler)
+    AverageFilter                            0x000009b9   Thumb Code    78  averagefilter.o(i.AverageFilter)
+    BTIM1_IRQHandler                         0x00000a0d   Thumb Code    28  main.o(i.BTIM1_IRQHandler)
+    BTIM1_Init                               0x00000a2d   Thumb Code    78  btim.o(i.BTIM1_Init)
+    BTIM2_IRQHandler                         0x00000a85   Thumb Code   152  main.o(i.BTIM2_IRQHandler)
+    BTIM2_Init                               0x00000b2d   Thumb Code    78  btim.o(i.BTIM2_Init)
+    BTIM3_IRQHandler                         0x00000b85   Thumb Code     2  interrupts_cw32f003.o(i.BTIM3_IRQHandler)
+    BTIM_ClearITPendingBit                   0x00000b87   Thumb Code     8  cw32f003_btim.o(i.BTIM_ClearITPendingBit)
+    BTIM_Cmd                                 0x00000b8f   Thumb Code    24  cw32f003_btim.o(i.BTIM_Cmd)
+    BTIM_GetITStatus                         0x00000ba7   Thumb Code    18  cw32f003_btim.o(i.BTIM_GetITStatus)
+    BTIM_ITConfig                            0x00000bb9   Thumb Code    20  cw32f003_btim.o(i.BTIM_ITConfig)
+    BTIM_TimeBaseInit                        0x00000bcd   Thumb Code    28  cw32f003_btim.o(i.BTIM_TimeBaseInit)
+    Calibration_ReadInfo                     0x00000bed   Thumb Code    48  calibration.o(i.Calibration_ReadInfo)
+    Calibration_SaveInfo                     0x00000c25   Thumb Code    18  calibration.o(i.Calibration_SaveInfo)
+    Calibration_SetInfo                      0x00000c3d   Thumb Code     8  calibration.o(i.Calibration_SetInfo)
+    ComputeK                                 0x00000c49   Thumb Code   106  calibration.o(i.ComputeK)
+    FLASHRAM_IRQHandler                      0x00000cd1   Thumb Code     2  interrupts_cw32f003.o(i.FLASHRAM_IRQHandler)
+    FLASH_Erase                              0x00000cd5   Thumb Code    38  flash.o(i.FLASH_Erase)
+    FLASH_ErasePages                         0x00000d01   Thumb Code   112  cw32f003_flash.o(i.FLASH_ErasePages)
+    FLASH_LockAllPages                       0x00000d7d   Thumb Code     8  cw32f003_flash.o(i.FLASH_LockAllPages)
+    FLASH_Read                               0x00000d8d   Thumb Code    34  flash.o(i.FLASH_Read)
+    FLASH_SetLatency                         0x00000db1   Thumb Code    24  cw32f003_flash.o(i.FLASH_SetLatency)
+    FLASH_UnlockPages                        0x00000dd5   Thumb Code    60  cw32f003_flash.o(i.FLASH_UnlockPages)
+    FLASH_WirteHalfWords                     0x00000e19   Thumb Code   138  cw32f003_flash.o(i.FLASH_WirteHalfWords)
+    FLASH_Write                              0x00000eb1   Thumb Code    54  flash.o(i.FLASH_Write)
+    FirmwareDelay                            0x00000eed   Thumb Code    18  system_cw32f003.o(i.FirmwareDelay)
+    GPIOA_IRQHandler                         0x00000eff   Thumb Code     2  interrupts_cw32f003.o(i.GPIOA_IRQHandler)
+    GPIOB_IRQHandler                         0x00000f01   Thumb Code     2  interrupts_cw32f003.o(i.GPIOB_IRQHandler)
+    GPIOC_IRQHandler                         0x00000f03   Thumb Code     2  interrupts_cw32f003.o(i.GPIOC_IRQHandler)
+    GPIO_Init                                0x00000f05   Thumb Code   226  cw32f003_gpio.o(i.GPIO_Init)
+    GPIO_ReadPin                             0x00000fe7   Thumb Code    18  cw32f003_gpio.o(i.GPIO_ReadPin)
+    GPIO_WritePin                            0x00000ff9   Thumb Code    12  cw32f003_gpio.o(i.GPIO_WritePin)
+    GTIM_IRQHandler                          0x00001005   Thumb Code     2  interrupts_cw32f003.o(i.GTIM_IRQHandler)
+    HardFault_Handler                        0x00001007   Thumb Code     4  interrupts_cw32f003.o(i.HardFault_Handler)
+    I2C_IRQHandler                           0x0000100b   Thumb Code     2  interrupts_cw32f003.o(i.I2C_IRQHandler)
+    InitTick                                 0x0000100d   Thumb Code    90  cw32f003_systick.o(i.InitTick)
+    KEY_GetAction                            0x00001079   Thumb Code    30  keystatemachine.o(i.KEY_GetAction)
+    Key_GetState                             0x0000109d   Thumb Code   350  keystatemachine.o(i.Key_GetState)
+    Key_Init                                 0x00001201   Thumb Code    44  keystatemachine.o(i.Key_Init)
+    LVD_IRQHandler                           0x00001235   Thumb Code     2  interrupts_cw32f003.o(i.LVD_IRQHandler)
+    Menu_OnlyA                               0x00001239   Thumb Code   118  menu.o(i.Menu_OnlyA)
+    Menu_OnlyV                               0x000012b9   Thumb Code   118  menu.o(i.Menu_OnlyV)
+    Menu_SetA1                               0x00001339   Thumb Code    78  menu.o(i.Menu_SetA1)
+    Menu_SetA2                               0x0000138d   Thumb Code    78  menu.o(i.Menu_SetA2)
+    Menu_SetV1                               0x000013e1   Thumb Code    78  menu.o(i.Menu_SetV1)
+    Menu_SetV2                               0x00001435   Thumb Code    78  menu.o(i.Menu_SetV2)
+    Menu_VA                                  0x00001489   Thumb Code   362  menu.o(i.Menu_VA)
+    NMI_Handler                              0x000015fd   Thumb Code     2  interrupts_cw32f003.o(i.NMI_Handler)
+    Nixie_CloseLocation                      0x0000168d   Thumb Code    66  nixie.o(i.Nixie_CloseLocation)
+    Nixie_Init                               0x000016d9   Thumb Code    86  nixie.o(i.Nixie_Init)
+    Nixie_SetLocation                        0x0000173d   Thumb Code   102  nixie.o(i.Nixie_SetLocation)
+    Nixie_SetNum                             0x000017ad   Thumb Code   148  nixie.o(i.Nixie_SetNum)
+    Nixie_Show                               0x0000184d   Thumb Code    44  nixie.o(i.Nixie_Show)
+    PendSV_Handler                           0x00001881   Thumb Code     2  interrupts_cw32f003.o(i.PendSV_Handler)
+    RCC_Configuration                        0x00001885   Thumb Code    40  main.o(i.RCC_Configuration)
+    RCC_HCLKPRS_Config                       0x000018b1   Thumb Code    20  cw32f003_rcc.o(i.RCC_HCLKPRS_Config)
+    RCC_HSI_Enable                           0x000018d1   Thumb Code    42  cw32f003_rcc.o(i.RCC_HSI_Enable)
+    RCC_PCLKPRS_Config                       0x00001909   Thumb Code    20  cw32f003_rcc.o(i.RCC_PCLKPRS_Config)
+    RCC_SYSCLKSRC_Config                     0x00001929   Thumb Code    34  cw32f003_rcc.o(i.RCC_SYSCLKSRC_Config)
+    RCC_Sysctrl_GetHClkFreq                  0x00001959   Thumb Code    98  cw32f003_rcc.o(i.RCC_Sysctrl_GetHClkFreq)
+    RCC_SystemCoreClockUpdate                0x000019d1   Thumb Code     6  cw32f003_rcc.o(i.RCC_SystemCoreClockUpdate)
+    SPI_IRQHandler                           0x000019dd   Thumb Code     2  interrupts_cw32f003.o(i.SPI_IRQHandler)
+    SVC_Handler                              0x000019df   Thumb Code     2  interrupts_cw32f003.o(i.SVC_Handler)
+    SYSCTRL_IRQHandler                       0x000019e1   Thumb Code     2  interrupts_cw32f003.o(i.SYSCTRL_IRQHandler)
+    SysTick_Handler                          0x000019e5   Thumb Code    16  cw32f003_systick.o(i.SysTick_Handler)
+    SystemCoreClockUpdate                    0x000019fd   Thumb Code     8  system_cw32f003.o(i.SystemCoreClockUpdate)
+    SystemInit                               0x00001a0d   Thumb Code    50  system_cw32f003.o(i.SystemInit)
+    UART1_IRQHandler                         0x00001a49   Thumb Code     2  interrupts_cw32f003.o(i.UART1_IRQHandler)
+    UART2_IRQHandler                         0x00001a4b   Thumb Code     2  interrupts_cw32f003.o(i.UART2_IRQHandler)
+    VC1_IRQHandler                           0x00001a4d   Thumb Code     2  interrupts_cw32f003.o(i.VC1_IRQHandler)
+    VC2_IRQHandler                           0x00001a4f   Thumb Code     2  interrupts_cw32f003.o(i.VC2_IRQHandler)
+    WDT_IRQHandler                           0x00001a51   Thumb Code     2  interrupts_cw32f003.o(i.WDT_IRQHandler)
+    __ARM_clz                                0x00001a53   Thumb Code    46  depilogue.o(i.__ARM_clz)
+    __ARM_common_switch8                     0x00001a81   Thumb Code    28  main.o(i.__ARM_common_switch8)
+    __scatterload_copy                       0x00001a9d   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00001aab   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00001aad   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    main                                     0x00001abd   Thumb Code   242  main.o(i.main)
+    hsiprs_tbl                               0x00001bd0   Data          64  cw32f003_rcc.o(.constdata)
+    Region$$Table$$Base                      0x00001c10   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001c30   Number         0  anon$$obj.o(Region$$Table)
+    Flag_OriginalValue                       0x20000000   Data           1  main.o(.data)
+    voltage                                  0x20000002   Data           2  main.o(.data)
+    electricity                              0x20000004   Data           2  main.o(.data)
+    menu                                     0x20000006   Data           1  main.o(.data)
+    uwTick                                   0x20000008   Data           4  cw32f003_systick.o(.data)
+    uwTickPrio                               0x2000000c   Data           4  cw32f003_systick.o(.data)
+    uwTickFreq                               0x20000010   Data           1  cw32f003_systick.o(.data)
+    SystemCoreClock                          0x20000014   Data           4  system_cw32f003.o(.data)
+    NixieData                                0x20000018   Data          23  nixie.o(.data)
+    NixieShowNumInfo                         0x2000002f   Data           6  nixie.o(.data)
+    KeyCfg                                   0x20000036   Data           6  keystatemachine.o(.data)
+    V_K                                      0x2000003c   Data           4  calibration.o(.data)
+    A_K                                      0x20000040   Data           4  calibration.o(.data)
+    ADCValue                                 0x20000044   Data           4  adc.o(.data)
+    V_OriginalValue                          0x20000048   Data         200  main.o(.bss)
+    A_OriginalValue                          0x20000110   Data         200  main.o(.bss)
+    VA_Standard                              0x200001d8   Data          10  calibration.o(.bss)
+    __initial_sp                             0x200003e8   Data           0  startup_cw32f003.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000c1
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00001c78, Max: 0x00005000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00001c30, Max: 0x00005000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Data   RO          141    RESET               startup_cw32f003.o
+    0x000000c0   0x00000000   Code   RO         3366  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x00000004   Code   RO         3403    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x00000004   Code   RO         3406    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x00000000   Code   RO         3408    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x00000000   Code   RO         3410    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000000c8   0x00000008   Code   RO         3411    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000000d0   0x00000000   Code   RO         3413    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x000000d0   0x00000000   Code   RO         3415    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x000000d0   0x00000004   Code   RO         3404    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000d4   0x00000028   Code   RO          142    .text               startup_cw32f003.o
+    0x000000fc   0x0000002c   Code   RO         3369    .text               mc_p.l(uidiv.o)
+    0x00000128   0x00000028   Code   RO         3371    .text               mc_p.l(idiv.o)
+    0x00000150   0x00000024   Code   RO         3373    .text               mc_p.l(memcpya.o)
+    0x00000174   0x0000007a   Code   RO         3379    .text               mf_p.l(fmul.o)
+    0x000001ee   0x00000002   PAD
+    0x000001f0   0x000000d0   Code   RO         3385    .text               mf_p.l(dmul.o)
+    0x000002c0   0x000000f0   Code   RO         3387    .text               mf_p.l(ddiv.o)
+    0x000003b0   0x0000000e   Code   RO         3391    .text               mf_p.l(ffltui.o)
+    0x000003be   0x00000002   PAD
+    0x000003c0   0x00000028   Code   RO         3393    .text               mf_p.l(dflti.o)
+    0x000003e8   0x00000028   Code   RO         3395    .text               mf_p.l(ffixui.o)
+    0x00000410   0x00000038   Code   RO         3401    .text               mf_p.l(d2f.o)
+    0x00000448   0x00000020   Code   RO         3417    .text               mc_p.l(llshl.o)
+    0x00000468   0x00000022   Code   RO         3419    .text               mc_p.l(llushr.o)
+    0x0000048a   0x00000000   Code   RO         3423    .text               mc_p.l(iusefp.o)
+    0x0000048a   0x00000082   Code   RO         3424    .text               mf_p.l(fepilogue.o)
+    0x0000050c   0x000000be   Code   RO         3426    .text               mf_p.l(depilogue.o)
+    0x000005ca   0x00000002   PAD
+    0x000005cc   0x00000024   Code   RO         3430    .text               mc_p.l(init.o)
+    0x000005f0   0x00000044   Code   RO          289    i.ADC_BufEnSerialCh  cw32f003_adc.o
+    0x00000634   0x0000009c   Code   RO         3270    i.ADC_ChannelInit   adc.o
+    0x000006d0   0x00000014   Code   RO          291    i.ADC_ClearITPendingAll  cw32f003_adc.o
+    0x000006e4   0x00000020   Code   RO          298    i.ADC_Enable        cw32f003_adc.o
+    0x00000704   0x00000018   Code   RO          304    i.ADC_GetITStatus   cw32f003_adc.o
+    0x0000071c   0x00000014   Code   RO          306    i.ADC_GetSqr0Result  cw32f003_adc.o
+    0x00000730   0x00000014   Code   RO          307    i.ADC_GetSqr1Result  cw32f003_adc.o
+    0x00000744   0x00000018   Code   RO         3271    i.ADC_GetValue      adc.o
+    0x0000075c   0x00000002   Code   RO          148    i.ADC_IRQHandler    interrupts_cw32f003.o
+    0x0000075e   0x00000002   PAD
+    0x00000760   0x00000084   Code   RO          313    i.ADC_Init          cw32f003_adc.o
+    0x000007e4   0x00000052   Code   RO          315    i.ADC_SerialChCommon  cw32f003_adc.o
+    0x00000836   0x00000002   PAD
+    0x00000838   0x00000020   Code   RO          316    i.ADC_SerialChContinuousModeCfg  cw32f003_adc.o
+    0x00000858   0x00000024   Code   RO          327    i.ADC_SoftwareStartConvCmd  cw32f003_adc.o
+    0x0000087c   0x00000034   Code   RO          328    i.ADC_Sqr01ChannelCfg  cw32f003_adc.o
+    0x000008b0   0x00000040   Code   RO          329    i.ADC_Sqr02ChannelCfg  cw32f003_adc.o
+    0x000008f0   0x00000048   Code   RO          330    i.ADC_Sqr03ChannelCfg  cw32f003_adc.o
+    0x00000938   0x00000028   Code   RO          331    i.ADC_Sqr0ChannelCfg  cw32f003_adc.o
+    0x00000960   0x00000018   Code   RO          332    i.ADC_StructInit    cw32f003_adc.o
+    0x00000978   0x00000014   Code   RO         3116    i.ADC_ToElectricity  calibration.o
+    0x0000098c   0x00000028   Code   RO         3117    i.ADC_ToVoltage     calibration.o
+    0x000009b4   0x00000002   Code   RO          149    i.AWT_IRQHandler    interrupts_cw32f003.o
+    0x000009b6   0x00000002   PAD
+    0x000009b8   0x00000054   Code   RO         3099    i.AverageFilter     averagefilter.o
+    0x00000a0c   0x00000020   Code   RO            3    i.BTIM1_IRQHandler  main.o
+    0x00000a2c   0x00000058   Code   RO         3302    i.BTIM1_Init        btim.o
+    0x00000a84   0x000000a8   Code   RO            4    i.BTIM2_IRQHandler  main.o
+    0x00000b2c   0x00000058   Code   RO         3303    i.BTIM2_Init        btim.o
+    0x00000b84   0x00000002   Code   RO          150    i.BTIM3_IRQHandler  interrupts_cw32f003.o
+    0x00000b86   0x00000008   Code   RO          997    i.BTIM_ClearITPendingBit  cw32f003_btim.o
+    0x00000b8e   0x00000018   Code   RO          998    i.BTIM_Cmd          cw32f003_btim.o
+    0x00000ba6   0x00000012   Code   RO         1003    i.BTIM_GetITStatus  cw32f003_btim.o
+    0x00000bb8   0x00000014   Code   RO         1005    i.BTIM_ITConfig     cw32f003_btim.o
+    0x00000bcc   0x00000020   Code   RO         1014    i.BTIM_TimeBaseInit  cw32f003_btim.o
+    0x00000bec   0x00000038   Code   RO         3118    i.Calibration_ReadInfo  calibration.o
+    0x00000c24   0x00000018   Code   RO         3119    i.Calibration_SaveInfo  calibration.o
+    0x00000c3c   0x0000000c   Code   RO         3120    i.Calibration_SetInfo  calibration.o
+    0x00000c48   0x00000088   Code   RO         3121    i.ComputeK          calibration.o
+    0x00000cd0   0x00000002   Code   RO          151    i.FLASHRAM_IRQHandler  interrupts_cw32f003.o
+    0x00000cd2   0x00000002   PAD
+    0x00000cd4   0x0000002c   Code   RO         3235    i.FLASH_Erase       flash.o
+    0x00000d00   0x0000007c   Code   RO         1220    i.FLASH_ErasePages  cw32f003_flash.o
+    0x00000d7c   0x00000010   Code   RO         1225    i.FLASH_LockAllPages  cw32f003_flash.o
+    0x00000d8c   0x00000022   Code   RO         3236    i.FLASH_Read        flash.o
+    0x00000dae   0x00000002   PAD
+    0x00000db0   0x00000024   Code   RO         1228    i.FLASH_SetLatency  cw32f003_flash.o
+    0x00000dd4   0x00000044   Code   RO         1232    i.FLASH_UnlockPages  cw32f003_flash.o
+    0x00000e18   0x00000098   Code   RO         1234    i.FLASH_WirteHalfWords  cw32f003_flash.o
+    0x00000eb0   0x0000003c   Code   RO         3237    i.FLASH_Write       flash.o
+    0x00000eec   0x00000012   Code   RO         2951    i.FirmwareDelay     system_cw32f003.o
+    0x00000efe   0x00000002   Code   RO          152    i.GPIOA_IRQHandler  interrupts_cw32f003.o
+    0x00000f00   0x00000002   Code   RO          153    i.GPIOB_IRQHandler  interrupts_cw32f003.o
+    0x00000f02   0x00000002   Code   RO          154    i.GPIOC_IRQHandler  interrupts_cw32f003.o
+    0x00000f04   0x000000e2   Code   RO         1338    i.GPIO_Init         cw32f003_gpio.o
+    0x00000fe6   0x00000012   Code   RO         1340    i.GPIO_ReadPin      cw32f003_gpio.o
+    0x00000ff8   0x0000000c   Code   RO         1343    i.GPIO_WritePin     cw32f003_gpio.o
+    0x00001004   0x00000002   Code   RO          155    i.GTIM_IRQHandler   interrupts_cw32f003.o
+    0x00001006   0x00000004   Code   RO          156    i.HardFault_Handler  interrupts_cw32f003.o
+    0x0000100a   0x00000002   Code   RO          157    i.I2C_IRQHandler    interrupts_cw32f003.o
+    0x0000100c   0x0000006c   Code   RO         2410    i.InitTick          cw32f003_systick.o
+    0x00001078   0x00000024   Code   RO         3063    i.KEY_GetAction     keystatemachine.o
+    0x0000109c   0x00000164   Code   RO         3064    i.Key_GetState      keystatemachine.o
+    0x00001200   0x00000034   Code   RO         3065    i.Key_Init          keystatemachine.o
+    0x00001234   0x00000002   Code   RO          158    i.LVD_IRQHandler    interrupts_cw32f003.o
+    0x00001236   0x00000002   PAD
+    0x00001238   0x00000080   Code   RO         3176    i.Menu_OnlyA        menu.o
+    0x000012b8   0x00000080   Code   RO         3177    i.Menu_OnlyV        menu.o
+    0x00001338   0x00000054   Code   RO         3178    i.Menu_SetA1        menu.o
+    0x0000138c   0x00000054   Code   RO         3179    i.Menu_SetA2        menu.o
+    0x000013e0   0x00000054   Code   RO         3180    i.Menu_SetV1        menu.o
+    0x00001434   0x00000054   Code   RO         3181    i.Menu_SetV2        menu.o
+    0x00001488   0x00000174   Code   RO         3182    i.Menu_VA           menu.o
+    0x000015fc   0x00000002   Code   RO          159    i.NMI_Handler       interrupts_cw32f003.o
+    0x000015fe   0x00000002   PAD
+    0x00001600   0x00000014   Code   RO         3304    i.NVIC_EnableIRQ    btim.o
+    0x00001614   0x00000078   Code   RO         2411    i.NVIC_SetPriority  cw32f003_systick.o
+    0x0000168c   0x0000004c   Code   RO         2996    i.Nixie_CloseLocation  nixie.o
+    0x000016d8   0x00000064   Code   RO         2997    i.Nixie_Init        nixie.o
+    0x0000173c   0x00000070   Code   RO         3000    i.Nixie_SetLocation  nixie.o
+    0x000017ac   0x000000a0   Code   RO         3001    i.Nixie_SetNum      nixie.o
+    0x0000184c   0x00000034   Code   RO         3002    i.Nixie_Show        nixie.o
+    0x00001880   0x00000002   Code   RO          160    i.PendSV_Handler    interrupts_cw32f003.o
+    0x00001882   0x00000002   PAD
+    0x00001884   0x0000002c   Code   RO            5    i.RCC_Configuration  main.o
+    0x000018b0   0x00000020   Code   RO         2042    i.RCC_HCLKPRS_Config  cw32f003_rcc.o
+    0x000018d0   0x00000038   Code   RO         2047    i.RCC_HSI_Enable    cw32f003_rcc.o
+    0x00001908   0x00000020   Code   RO         2054    i.RCC_PCLKPRS_Config  cw32f003_rcc.o
+    0x00001928   0x00000030   Code   RO         2058    i.RCC_SYSCLKSRC_Config  cw32f003_rcc.o
+    0x00001958   0x00000078   Code   RO         2060    i.RCC_Sysctrl_GetHClkFreq  cw32f003_rcc.o
+    0x000019d0   0x0000000c   Code   RO         2062    i.RCC_SystemCoreClockUpdate  cw32f003_rcc.o
+    0x000019dc   0x00000002   Code   RO          161    i.SPI_IRQHandler    interrupts_cw32f003.o
+    0x000019de   0x00000002   Code   RO          162    i.SVC_Handler       interrupts_cw32f003.o
+    0x000019e0   0x00000002   Code   RO          163    i.SYSCTRL_IRQHandler  interrupts_cw32f003.o
+    0x000019e2   0x00000002   PAD
+    0x000019e4   0x00000018   Code   RO         2415    i.SysTick_Handler   cw32f003_systick.o
+    0x000019fc   0x00000010   Code   RO         2953    i.SystemCoreClockUpdate  system_cw32f003.o
+    0x00001a0c   0x0000003c   Code   RO         2954    i.SystemInit        system_cw32f003.o
+    0x00001a48   0x00000002   Code   RO          164    i.UART1_IRQHandler  interrupts_cw32f003.o
+    0x00001a4a   0x00000002   Code   RO          165    i.UART2_IRQHandler  interrupts_cw32f003.o
+    0x00001a4c   0x00000002   Code   RO          166    i.VC1_IRQHandler    interrupts_cw32f003.o
+    0x00001a4e   0x00000002   Code   RO          167    i.VC2_IRQHandler    interrupts_cw32f003.o
+    0x00001a50   0x00000002   Code   RO          168    i.WDT_IRQHandler    interrupts_cw32f003.o
+    0x00001a52   0x0000002e   Code   RO         3428    i.__ARM_clz         mf_p.l(depilogue.o)
+    0x00001a80   0x0000001c   Code   RO           41    i.__ARM_common_switch8  main.o
+    0x00001a9c   0x0000000e   Code   RO         3434    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x00001aaa   0x00000002   Code   RO         3435    i.__scatterload_null  mc_p.l(handlers.o)
+    0x00001aac   0x0000000e   Code   RO         3436    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x00001aba   0x00000002   PAD
+    0x00001abc   0x00000114   Code   RO            6    i.main              main.o
+    0x00001bd0   0x00000040   Data   RO         2064    .constdata          cw32f003_rcc.o
+    0x00001c10   0x00000020   Data   RO         3432    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000003e8, Max: 0x00000c00, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000007   Data   RW            8    .data               main.o
+    0x20000007   0x00000001   PAD
+    0x20000008   0x00000009   Data   RW         2416    .data               cw32f003_systick.o
+    0x20000011   0x00000003   PAD
+    0x20000014   0x00000004   Data   RW         2955    .data               system_cw32f003.o
+    0x20000018   0x0000001e   Data   RW         3003    .data               nixie.o
+    0x20000036   0x00000006   Data   RW         3066    .data               keystatemachine.o
+    0x2000003c   0x00000008   Data   RW         3123    .data               calibration.o
+    0x20000044   0x00000004   Data   RW         3272    .data               adc.o
+    0x20000048   0x00000190   Zero   RW            7    .bss                main.o
+    0x200001d8   0x0000000a   Zero   RW         3122    .bss                calibration.o
+    0x200001e2   0x00000006   PAD
+    0x200001e8   0x00000200   Zero   RW          139    STACK               startup_cw32f003.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       180         16          0          4          0       1592   adc.o
+        84          6          0          0          0       1008   averagefilter.o
+       196         26          0          0          0       7266   btim.o
+       288         58          0          8         10       3733   calibration.o
+       718         82          0          0          0      20966   cw32f003_adc.o
+       102          4          0          0          0       2983   cw32f003_btim.o
+       396         54          0          0          0       3510   cw32f003_flash.o
+       256          0          0          0          0       2027   cw32f003_gpio.o
+       300         80         64          0          0       3541   cw32f003_rcc.o
+       252         36          0          9          0       8628   cw32f003_systick.o
+       138         12          0          0          0       2121   flash.o
+        44          0          0          0          0       8524   interrupts_cw32f003.o
+       444         28          0          6          0       2799   keystatemachine.o
+       548         68          0          7        400     114092   main.o
+       964         54          0          0          0       3524   menu.o
+       500         72          0         30          0       3204   nixie.o
+        40         14        192          0        512        588   startup_cw32f003.o
+        94         18          0          4          0       2027   system_cw32f003.o
+
+    ----------------------------------------------------------------------
+      5562        628        288         72        928     192133   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        18          0          0          4          6          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        40          0          0          0          0         72   idiv.o
+        36          8          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        32          0          0          0          0         68   llshl.o
+        34          0          0          0          0         68   llushr.o
+        36          0          0          0          0         60   memcpya.o
+        44          0          0          0          0         72   uidiv.o
+        56          0          0          0          0         68   d2f.o
+       240          6          0          0          0         84   ddiv.o
+       236          0          0          0          0        216   depilogue.o
+        40          6          0          0          0         68   dflti.o
+       208          6          0          0          0         88   dmul.o
+       130          0          0          0          0        144   fepilogue.o
+        40          0          0          0          0         60   ffixui.o
+        14          0          0          0          0         68   ffltui.o
+       122          0          0          0          0         72   fmul.o
+
+    ----------------------------------------------------------------------
+      1366         34          0          0          0       1276   Library Totals
+         8          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       272         16          0          0          0        408   mc_p.l
+      1086         18          0          0          0        868   mf_p.l
+
+    ----------------------------------------------------------------------
+      1366         34          0          0          0       1276   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      6928        662        288         72        928     188897   Grand Totals
+      6928        662        288         72        928     188897   ELF Image Totals
+      6928        662        288         72          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 7216 (   7.05kB)
+    Total RW  Size (RW Data + ZI Data)              1000 (   0.98kB)
+    Total ROM Size (Code + RO Data + RW Data)       7288 (   7.12kB)
+
+==============================================================================
+

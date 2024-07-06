@@ -1,0 +1,27 @@
+[FILEFORMAT]
+rev=1.6
+
+[CHIP]
+name=CW32F003F4
+endiansupport=le
+thumbsupport=true
+armsupport=false
+fpu=None
+SIMD=false
+
+
+JTAG=false
+SWD=true
+SWO_TraceD0=false
+
+[CORE]
+name=Cortex-M0+
+
+[DDF FILE]
+name=CW\CW32F003F4.ddf
+
+[LINKER FILE]
+name=$TOOLKIT_DIR$\config\linker\CW\CW32f003f4.icf
+
+[FLASH LOADER]
+little=$TOOLKIT_DIR$\config\flashloader\CW\FlashCW32F003F4.board

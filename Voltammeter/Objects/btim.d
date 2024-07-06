@@ -1,0 +1,15 @@
+.\objects\btim.o: System\BTIM\BTIM.c
+.\objects\btim.o: System\BTIM\BTIM.h
+.\objects\btim.o: .\Libraries\inc\base_types.h
+.\objects\btim.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\btim.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\string.h
+.\objects\btim.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\btim.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\btim.o: D:\Keil5\software\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\btim.o: .\Libraries\inc\cw32f003.h
+.\objects\btim.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0plus.h
+.\objects\btim.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h
+.\objects\btim.o: D:\Keil5\software\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h
+.\objects\btim.o: .\Libraries\inc\system_cw32f003.h
+.\objects\btim.o: .\Libraries\inc\cw32f003_btim.h
+.\objects\btim.o: .\Libraries\inc\cw32f003_rcc.h
